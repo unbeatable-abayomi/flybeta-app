@@ -126,12 +126,13 @@ section.banner1 {
   /* margin: 1rem; */
 }
 
-#departing-date-picker {
-  margin-left: 5rem;
-}
-
 #returning-date-picker {
   margin-left: 6rem;
+}
+
+#departing-date-picker {
+  margin-left: 5.5rem;
+  margin-bottom: 2rem;
 }
 
 #one_wayANDround_trip {
@@ -143,6 +144,10 @@ section.banner1 {
 #childrenNumber,
 #classType #flight_saveAndBook {
   width: 13rem;
+}
+
+.departing-text {
+  margin-right: -7rem;
 }
 
 #childrenNumber {
@@ -167,24 +172,130 @@ section.banner1 {
 }
 
 .classtype_text {
-  margin-left: 7rem;
-  margin-left: 7rem;
+  margin-right: -11rem;
 }
 
-@media only screen and (max-width: 991px) {
+@media (max-width: 1024px) {
+  #originFrom {
+    margin-left: -.8rem;
+  }
+  #returning-date-picker {
+    width: 13rem;
+    margin-left: 13.5rem;
+  }
+  .returning-text {
+    margin-right: -15rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #originFrom,
+  #destinationTo,
+  #returning-date-picker {
+    width: 9rem;
+    margin-right: 1.5rem;
+  }
+  #departing-date-picker {
+    width: 9rem;
+    margin-left: 4.5rem;
+  }
+  #adultNumber,
+  #childrenNumber,
+  #classType {
+    width: 9rem;
+  }
+}
+
+@media (max-width: 768px) and (max-width: 425px) {
+  .panel1011_firstDiv {
+    margin-bottom: 10rem;
+  }
+  #originFrom,
+  #destinationTo,
+  #returning-date-picker,
+  #departing-date-picker {
+    width: 22rem;
+    margin-top: -.1rem;
+    margin-left: -7.3rem;
+  }
+  .belowDiv {
+    margin-top: -10rem;
+    padding: 1rem;
+  }
+  #adultNumber,
+  #childrenNumber,
+  #classType {
+    width: 22rem;
+    margin-left: -7.9rem;
+    margin-bottom: .5rem;
+  }
+  #classType {
+    margin-right: 7.9rem;
+  }
+  .destination-text,
+  #origin-text {
+    margin-right: 8rem;
+  }
+  .departing-text {
+    margin-right: 8rem;
+  }
+  .classtype_text,
+  .children-text,
+  .adult-text {
+    margin-right: 8rem;
+  }
+}
+
+@media (max-width: 768px) and (max-width: 375px) {
+  #originFrom,
+  #destinationTo,
+  #returning-date-picker,
+  #departing-date-picker,
+  #adultNumber,
+  #childrenNumber,
+  #classType {
+    width: 20rem;
+  }
+  .departing-text,
+  .destination-text,
+  #origin-text,
+  .classtype_text,
+  .children-text,
+  .adult-text {
+    margin-left: -1.5rem;
+  }
+}
+
+@media (max-width: 768px) and (max-width: 320px) {
+  #originFrom,
+  #destinationTo,
+  #returning-date-picker,
+  #departing-date-picker,
+  #adultNumber,
+  #childrenNumber,
+  #classType {
+    width: 16rem;
+  }
+}
+
+@media (max-width: 768px) {
+  /* abayomi styles end */
+}
+
+@media only screen and (max-width: 768px) and (max-width: 991px) {
   .mT-50 {
     margin-top: 50px !important;
   }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) and (max-width: 767px) {
   .centerElem {
     float: none !important;
     margin: 0 auto !important;
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) and (max-width: 768px) {
   section.banner {
     height: auto;
     padding: 0;
@@ -222,15 +333,16 @@ section.banner1 {
   }
 }
 
-/* abayomi styles end */
-/*Font style for the Summary Modal - Sabur Ahmed.*/
-.card-text {
-  font-family: 'Courier New', Courier, monospace;
-  line-height: 15px;
+@media (max-width: 768px) {
+  /*Font style for the Summary Modal - Sabur Ahmed.*/
+  .card-text {
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 15px;
+  }
+  /*End of font style for the Summary Modal - Sabur Ahmed*/
 }
 
-/*End of font style for the Summary Modal - Sabur Ahmed*/
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) and (max-width: 768px) {
   section.banner {
     height: auto;
     padding: 0;
@@ -268,7 +380,7 @@ section.banner1 {
   }
 }
 
-@media only screen and (max-width: 560px) {
+@media only screen and (max-width: 768px) and (max-width: 560px) {
   .view.ng-scope {
     height: 560px !important;
   }
@@ -296,7 +408,7 @@ section.banner1 {
   }
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 768px) and (max-width: 425px) {
   section.banner {
     height: auto;
     background: #001650;
@@ -327,7 +439,7 @@ section.banner1 {
   }
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 768px) and (max-width: 375px) {
   .whatwedo .tab-pane a {
     width: 150px;
   }
@@ -337,7 +449,7 @@ section.banner1 {
   }
 }
 
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 768px) and (max-width: 360px) {
   section.banner {
     height: auto;
     background: #001650;
@@ -367,7 +479,7 @@ section.banner1 {
   }
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 768px) and (max-width: 320px) {
   section.banner {
     height: 160px;
     background: #001650;
@@ -390,36 +502,32 @@ section.banner1 {
   }
 }
 
-.modal-dialog {
-  max-width: 1000px;
-}
-
-.waves-input-wrapper.waves-effect.waves-light {
-  width: 100%;
-}
-
-div#accordionEx5 {
-  width: 100%;
-}
-
-.panel-body {
-  padding: 20px 10px 0px 10px;
-  line-height: 1.6;
-  letter-spacing: 1px;
-  border: 1px solid;
-  margin: 0 0 10px;
-  text-align: justify;
-}
-
-.table.table-bordered tbody tr th {
-  color: #000;
-}
-
-.table.table-bordered tbody tr td {
-  color: #000;
-}
-
-.uib-tab.nav-item.ng-scope.ng-isolate-scope a {
-  color: blue;
+@media (max-width: 768px) {
+  .modal-dialog {
+    max-width: 1000px;
+  }
+  .waves-input-wrapper.waves-effect.waves-light {
+    width: 100%;
+  }
+  div#accordionEx5 {
+    width: 100%;
+  }
+  .panel-body {
+    padding: 20px 10px 0px 10px;
+    line-height: 1.6;
+    letter-spacing: 1px;
+    border: 1px solid;
+    margin: 0 0 10px;
+    text-align: justify;
+  }
+  .table.table-bordered tbody tr th {
+    color: #000;
+  }
+  .table.table-bordered tbody tr td {
+    color: #000;
+  }
+  .uib-tab.nav-item.ng-scope.ng-isolate-scope a {
+    color: blue;
+  }
 }
 /*# sourceMappingURL=main.css.map */

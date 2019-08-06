@@ -6,6 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
       <meta http-equiv="x-ua-compatible" content="ie=edge">
       <title>Book Your Ultimate Traveling Experience - Flybeta</title>
+
       <!-- Font Awesome -->
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
       <!-- Bootstrap core CSS -->
@@ -135,12 +136,12 @@
                                 </ul>
                                 <div class="row panel1011_firstDiv">
                                   <div class="col-md-3">
-                                    <label class="black-text active">Origin</label>
+                                    <label class="black-text active" id="origin-text">Origin</label>
                                     <input type="text" id="originFrom" class="form-control" placeholder="City, Airport"
                                       required>
                                   </div>
                                   <div class="col-md-2">
-                                    <label class="black-text">Destination</label>
+                                    <label class="black-text destination-text">Destination</label>
 
                                     <input type="text" id="destinationTo"
                                       class="form-control ng-pristine ng-untouched ng-valid ng-empty ng-valid-maxlength"
@@ -148,16 +149,16 @@
                                   </div>
                                   <div class="col-md-3">
 
-                                    <label class="black-text">Departing</label>
+                                    <label class="black-text departing-text">Departing</label>
                                     <input placeholder="Selected date" type="date" id="departing-date-picker"
-                                      class="form-control datepicker" style="padding: 5px 0 5px 12px;">
+                               class="form-control datepicker" style="padding: 5px 0 5px 12px;">
 
                                   </div>
                                   <div class="tab-content">
 
                                     <div class="tab-pane fade" id="panel2" role="tabpanel">
                                       <div class="float-left">
-                                        <label class="black-text active">Returning</label>
+                                        <label class="black-text active returning-text">Returning</label>
 
                                         <input placeholder="Selected date" type="date" id="returning-date-picker"
                                           class="form-control datepicker" style="padding: 5px 0 5px 12px;">
@@ -169,7 +170,7 @@
                                 <div class="row belowDiv">
 
                                   <div class="col-md-3" style="padding-left: 3px;    padding-right: 5px;">
-                                    <label class="black-text active">Adults</label>
+                                    <label class="black-text active adult-text">Adults</label>
                                     <select class="mdb-select ng-pristine ng-untouched ng-valid ng-empty"
                                       autocomplete="on" style=" border: 1px solid #ced4da;
                                                     border-radius: .25rem; 
@@ -192,7 +193,7 @@
                                     </select>
                                   </div>
                                   <div class="col-md-2" style="padding-left: 5px; padding-right: 5px;">
-                                    <label class="black-text">Children</label>
+                                    <label class="black-text children-text">Children</label>
                                     <select class="mdb-select ng-pristine ng-untouched ng-valid ng-empty"
                                       autocomplete="on" style=" border: 1px solid #ced4da;
                                                     border-radius: .25rem;

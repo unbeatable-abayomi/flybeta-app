@@ -126,13 +126,17 @@ section.banner1 {
   /* margin: 1rem; */
 }
 
-#departing-date-picker {
-  margin-left: 5rem;
-}
-
-#returning-date-picker {
+#returning-date-picker{
+  // margin-top: 14rem;
+  // margin-bottom: -4rem;
   margin-left: 6rem;
 }
+#departing-date-picker {
+  margin-left: 5.5rem;
+  margin-bottom: 2rem;
+}
+
+
 
 #one_wayANDround_trip {
   margin-left: 19rem;
@@ -143,8 +147,11 @@ section.banner1 {
 #childrenNumber,
 #classType #flight_saveAndBook {
   width: 13rem;
+  // margin-top:1rem;
 }
-
+.departing-text{
+  margin-right: -7rem;
+}
 #childrenNumber {
   margin-left: 0.5rem;
 }
@@ -153,6 +160,7 @@ section.banner1 {
   width: 13rem;
   margin-left: 5.8rem;
   height: 45px;
+  // margin-top: -25rem;
 }
 
 #flight_saveAndBook {
@@ -167,9 +175,130 @@ section.banner1 {
 }
 
 .classtype_text {
-  margin-left: 7rem;
-  margin-left: 7rem;
+  margin-right: -11rem;
+  // margin-left: 7rem;
 }
+
+@media (max-width: 1024px){
+  #originFrom{
+    margin-left: -.8rem;
+    // background: red;
+  }
+  #returning-date-picker {
+    width: 13rem;
+     margin-left: 13.5rem; 
+  }
+  .returning-text{
+    margin-right: -15rem;
+  }
+ 
+
+}
+@media (max-width : 768px){
+  #originFrom,
+#destinationTo,
+#returning-date-picker {
+  width: 9rem;
+   margin-right: 1.5rem; 
+}
+
+
+#departing-date-picker{
+  width: 9rem;
+  margin-left: 4.5rem;
+}
+
+#adultNumber,
+#childrenNumber,
+#classType {
+  width: 9rem;
+}
+
+
+
+@media (max-width: 425px) {
+  .panel1011_firstDiv{
+    margin-bottom: 10rem;
+  }
+
+  #originFrom,
+#destinationTo,
+#returning-date-picker,
+#departing-date-picker {
+  width: 22rem;
+  margin-top: -.1rem;
+margin-left: -7.3rem;
+}
+
+.belowDiv{
+  margin-top: -10rem;
+  padding: 1rem;
+ 
+}
+
+#adultNumber,
+#childrenNumber,
+#classType
+{
+  width: 22rem;
+  margin-left: -7.9rem;
+  margin-bottom: .5rem;
+}
+
+#classType{
+  margin-right: 7.9rem;
+}
+.destination-text,
+#origin-text{
+  margin-right: 8rem;
+}
+
+.departing-text{
+  margin-right: 8rem;
+}
+.classtype_text,
+.children-text,
+.adult-text{
+  margin-right: 8rem;
+}
+
+
+
+}
+
+@media (max-width: 375px) {
+  #originFrom,
+  #destinationTo,
+  #returning-date-picker,
+  #departing-date-picker ,
+  #adultNumber,
+#childrenNumber,
+#classType{
+  width: 20rem;
+}
+.departing-text,
+.destination-text,
+#origin-text,
+.classtype_text,
+.children-text,
+.adult-text{
+  margin-left: -1.5rem;
+}
+
+}
+@media (max-width: 320px) {
+  #originFrom,
+  #destinationTo,
+  #returning-date-picker,
+  #departing-date-picker ,
+  #adultNumber,
+#childrenNumber,
+#classType{
+  width: 16rem;
+}
+}
+
+/* abayomi styles end */
 
 @media only screen and (max-width: 991px) {
   .mT-50 {
@@ -231,7 +360,7 @@ section.banner1 {
   }
 
 }
-/* abayomi styles end */
+
 
 /*Font style for the Summary Modal - Sabur Ahmed.*/
 .card-text {
@@ -468,5 +597,4 @@ div#accordionEx5 {
 .uib-tab.nav-item.ng-scope.ng-isolate-scope a {
   color: blue;
 }
-
-/*# sourceMappingURL=main.css.map */
+}
