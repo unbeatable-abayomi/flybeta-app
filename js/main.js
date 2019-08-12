@@ -51,6 +51,18 @@ flightForm.addEventListener('submit', (e) => {
 	ticket_adult.textContent = adult1_input;
 	ticket_children.textContent = children1_input;
 	ticket_classType.textContent = classType1_input;
+	if(ticket_departing.textContent === ''){
+        ticket_departing.textContent = 'N/A';
+	}
+	if(ticket_returning.textContent === ''){
+		ticket_returning.textContent = 'N/A';
+	}
+	if(ticket_adult.textContent === ''){
+         ticket_adult.textContent = 'N/A';      
+	}
+	if(ticket_children.textContent === ''){
+		ticket_children.textContent === 'N/A'
+	}
 
 	console.log(origin_input);
 });
@@ -109,7 +121,17 @@ hotelForm.addEventListener('submit', (e) => {
 	ticket_checkOut.textContent = check_out_date1_input;
 	ticket_room.textContent = room_number1_input;
 	ticket_nationality.textContent = nationality1_input;
+	if (ticket_checkIn.textContent === ''){
+		ticket_checkIn.textContent = 'N/A'
+	}
+	if (ticket_checkOut.textContent === ''){
+		ticket_checkOut.textContent = 'N/A'
+	}
+	if (ticket_room.textContent === ''){
+		ticket_room.textContent = 'N/A'
+	}
 });
+
 
 // FORM FOR RIDE
 const carForm = selector('#carForm');
@@ -188,4 +210,9 @@ carForm.addEventListener('submit', (e) => {
 	ticket_pickup_hours.textContent = pickup_hours1_input;
 	ticket_pickup_minutes.textContent = pickup_minutes1_input;
 	ticket_pickup_meridiem.textContent = pickup_meridiem1_input;
+	if (ticket_pickup_hours.textContent === '-1'){
+		ticket_pickup_hours.textContent = 'N/A'
+		ticket_pickup_minutes.textContent = 'N/A'
+		ticket_pickup_meridiem.textContent = 'N/A'
+	}
 });

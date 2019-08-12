@@ -282,6 +282,18 @@ section.banner1 {
 			margin-left: -1.5rem;
 		}
 	}
+
+	@media (max-width: 360px) {
+		#originFrom,
+		#destinationTo,
+		#returning-date-picker,
+		#departing-date-picker,
+		#adultNumber,
+		#childrenNumber,
+		#classType {
+			width: 18.8rem;
+		}
+	}
 	@media (max-width: 320px) {
 		#originFrom,
 		#destinationTo,
