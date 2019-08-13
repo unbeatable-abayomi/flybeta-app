@@ -26,14 +26,14 @@ flightForm.addEventListener('submit', (e) => {
 	const origin1 = origin.value;
 	const destination1 = destination.value;
 	const departingDate1 = departingDate.value;
-	const returningDate1 = returningDate.value;
+	// const returningDate1 = returningDate.value;
 	const adult1 = adult.options[adult.selectedIndex].value;
 	const children1 = children.options[children.selectedIndex].value;
 	const classType1 = classType.options[classType.selectedIndex].value;
 	sessionStorage.setItem('origin_input', origin1);
 	sessionStorage.setItem('destination1_input', destination1);
 	sessionStorage.setItem('departingDate1_input', departingDate1);
-	sessionStorage.setItem('returningDate1_input', returningDate1);
+	// sessionStorage.setItem('returningDate1_input', returningDate1);
 	sessionStorage.setItem('adult1_input', adult1);
 	sessionStorage.setItem('children1_input', children1);
 	sessionStorage.setItem('classType1_input', classType1);
@@ -165,7 +165,7 @@ const ticket_pickup_meridiem = selector('#ticket_pickup_meridiem');
 carForm.addEventListener('submit', (e) => {
 	e.preventDefault();
 	selector('#summary').style.display = 'block';
-	const travel_type1 = travel_type.options[travel_type.selectedIndex].value;
+	// const travel_type1 = travel_type.options[travel_type.selectedIndex].value;
 	const source_city1 = source_city.value;
 	const destination_city1 = destination_city.value;
 	const multiCity_trip_date_one = multiCity_trip_date_1.value;
@@ -176,7 +176,7 @@ carForm.addEventListener('submit', (e) => {
 	const pickup_hours1 = pickup_hours.value;
 	const pickup_minutes1 = pickup_minutes.value;
 	const pickup_meridiem1 = pickup_meridiem.value;
-	sessionStorage.setItem('travel_type1_input', travel_type1);
+	// sessionStorage.setItem('travel_type1_input', travel_type1);
 	sessionStorage.setItem('source_city1_input', source_city1);
 	sessionStorage.setItem('destination_city1_input', destination_city1);
 	sessionStorage.setItem('multiCity_trip_date_one_input', multiCity_trip_date_one);

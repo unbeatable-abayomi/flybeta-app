@@ -251,12 +251,12 @@
                             <ul class="nav nav-tab md-tabs">
                                       <li class="nav-item">
                                         <a class="nav-link black-text waves-effect waves-light active show" data-toggle="tab"
-                                        href="#panel1" role="tab">Domestic Hotel</a>
+                                        href="#panel1" role="tab">Hotel</a>
                                     </li>
-                                    <li class="nav-item">
+                                    <!-- <li class="nav-item">
                                       <a class="nav-link waves-light black-text waves-effect waves-light" data-toggle="tab"
                                      href="#panel2" role="tab">International Hotels</a>
-                                 </li>
+                                 </li> -->
 
                                </ul>
                                <div class="row">
@@ -566,27 +566,31 @@
                               <form class="ng-pristine ng-valid ng-valid-maxlength" id='carForm'>
                                 <div class="row">
 
-                                  <div class="col-md-4" style="padding-left: 5px;    padding-right: 5px;">
-                                    <label class="black-text">Travel Type</label>
+                                  <!-- <div class="col-md-4" style="padding-left: 5px;    padding-right: 5px;"> -->
+                                    <!-- <label class="black-text">Travel Type</label> -->
 
-                                    <select class="form-control ng-pristine ng-valid ng-empty ng-touched ng-untouched"
+                                    <!-- <select class="form-control ng-pristine ng-valid ng-empty ng-touched ng-untouched"
                                       style=" border: 1px solid #ced4da;
                                                     border-radius: .25rem;   width: 100%;
-                                                    height: 40px;" name="mobile_operator" id="travel_type">
+                                                    height: 40px;" name="mobile_operator" id="travel_type"> -->
                                       <!-- ngRepeat: dth in myData2 -->
-                                      <option ng-repeat="dth in myData2" ng-selected="goperator === operator.id"
-                                        selected="selected" ">
-                                                Out Station
-                                                </option><!-- end ngRepeat: dth in myData2 --><option ng-repeat=" dth
-                                        in myData2" ng-selected="goperator === operator.id" selected="selected">
-                                        Local
-                                      </option><!-- end ngRepeat: dth in myData2 -->
-                                      <option ng-repeat="dth in myData2" ng-selected="goperator === operator.id"
-                                        selected="selected">
-                                        Transfer
-                                      </option><!-- end ngRepeat: dth in myData2 -->
-                                    </select>
-                                  </div>
+                                      <!-- <option ng-repeat="dth in myData2" ng-selected="goperator === operator.id" -->
+                                        <!-- selected="selected" "> -->
+                                                <!-- Out Station -->
+                                                <!-- </option> -->
+                                                <!-- end ngRepeat: dth in myData2 -->
+                                                <!-- <option ng-repeat=" dth -->
+                                        <!-- in myData2" ng-selected="goperator === operator.id" selected="selected"> -->
+                                        <!-- Local -->
+                                      <!-- </option> -->
+                                      <!-- end ngRepeat: dth in myData2 -->
+                                      <!-- <option ng-repeat="dth in myData2" ng-selected="goperator === operator.id" -->
+                                        <!-- selected="selected"> -->
+                                        <!-- Transfer -->
+                                      <!-- </option> -->
+                                      <!-- end ngRepeat: dth in myData2 -->
+                                    <!-- </select> -->
+                                  <!-- </div> -->
                                   <div class="col-md-4" style="padding-left: 5px;    padding-right: 5px;">
                                     <!-- <label class="black-text">Trip Type</label>
                                     <ul class="nav nav-tab md-tabs">
@@ -615,7 +619,7 @@
                                     <label class="black-text">Form</label>
                                     <input
                                       class="form-control ng-pristine ng-valid ng-empty ng-valid-maxlength ng-touched ng-untouched"
-                                      id="source_city" type="text" autocomplete="off" placeholder="Source city"
+                                      id="source_city" type="text" autocomplete="on" placeholder="Source city"
                                       required>
 
                                   </div>
@@ -625,7 +629,7 @@
 
                                     <input
                                       class="form-control ng-pristine ng-valid ng-empty ng-valid-maxlength ng-touched ng-untouched"
-                                      type="text" autocomplete="off" id="destination_city"
+                                      type="text" autocomplete="" id="destination_city"
                                       placeholder="Destination city" required>
                                   </div>
 
@@ -863,6 +867,51 @@
                               </form>
                               <a data-toggle="modal" data-target="#summaryModal" id='summary' class="btn btn-warning waves-effect waves-light mt-4">Show Ticket</a>
                             </div>
+
+
+
+                            
+                            
+                            <!-- johnson code start -->
+                            
+                            <!-- <div class="col-lg-2 col-sm-2 col-xs-2 col-md-2 dropdowns">
+                              <div class="dropdown">
+                                  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                     <span id="total"></span> Passenger
+                                  </button>
+                                  <div class="dropdown-box ">
+                                      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                          <div class="row-12 dropdown-block">
+                                              <div class="col-6">
+                                                  <h4 class="dropdown-head">Adult(18+)</h4>
+                                              </div>
+                                              <div class="col-6 dropdown-btn-container">
+                                                  <div class="dropdown-btn-block">
+                                                      <button class="decre-btn" id="adult-dec"><img class="decre-img" onclick= "decreaseAdult();" src="asset/images/Decrebtn.svg" /></button>
+                                                      <input type="text" id="count-adult" value="1"></input>
+                                                      <button class="incre-btn" id="adult-inc" ><img class="incre-img" onclick= "increaseAdult();" src="asset/images/Increbtn.svg" /></button>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                          <hr></hr>
+                                          <div class="row-12 dropdown-block">
+                                                  <div class="col-6">
+                                                      <h4 class="dropdown-head">Children(0-17)</h4>
+                                                  </div>
+                                                  <div class="col-6 dropdown-btn-container">
+                                                      <div class="dropdown-btn-block">
+                                                          <button type="button" class="decre-btn" id="child-dec" id="btnincre"><img class="decre-img" onclick= "decreaseChildren();" src="asset/images/Decrebtn.svg" /></button>
+                                                          <input type="text" id="count-child" value="0"></input>
+                                                          <button class="incre-btn" id="child-inc"><img class="incre-img"onclick= "increaseChildren();" src="asset/images/Increbtn.svg" /></button>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div> -->
+                            
+                            <!-- johnson code end -->
                           
                   <!-- These are the codes for the pop-up modal by Sabur Ahmed -->
                               <div id="summaryModal" class="modal fade" tabindex="-1" role="dialog">
