@@ -189,3 +189,31 @@ carForm.addEventListener('submit', (e) => {
 	ticket_pickup_minutes.textContent = pickup_minutes1_input;
 	ticket_pickup_meridiem.textContent = pickup_meridiem1_input;
 });
+
+
+
+//jquery for increment/decrement
+$(document).ready(function () {
+	const minus = $('.quantity__minus');
+	const plus = $('.quantity__plus');
+	const input = $('.quantity__input');
+	
+	minus.click(function (e) {
+		e.preventDefault();
+		var value = input.val();
+		if (value > 1) {
+			value--;
+		}
+		input.val(value);
+		console.log(value)
+	});
+
+	plus.click(function (e) {
+		e.preventDefault();
+		var value = input.val();
+		value++;
+		input.val(value);
+		console.log(value)
+	})
+	
+});
