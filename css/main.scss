@@ -186,37 +186,37 @@ section.banner1 {
 	// margin-left: 7rem;
 }
 
-@media (max-width: 1024px) {
-	#originFrom {
-		margin-left: -.8rem;
-		// background: red;
-	}
-	#returning-date-picker {
-		width: 13rem;
-		margin-left: 13.5rem;
-	}
-	.returning-text {
-		margin-right: -15rem;
-	}
-}
-@media (max-width: 768px) {
-	#originFrom,
-	#destinationTo,
-	#returning-date-picker {
-		width: 9rem;
-		margin-right: 1.5rem;
-	}
+// @media (max-width: 1024px) {
+// 	#originFrom {
+// 		margin-left: -.8rem;
+// 		// background: red;
+// 	}
+// 	#returning-date-picker {
+// 		width: 13rem;
+// 		margin-left: 13.5rem;
+// 	}
+// 	.returning-text {
+// 		margin-right: -15rem;
+// 	}
+// }
+// @media (max-width: 768px) {
+// 	#originFrom,
+// 	#destinationTo,
+// 	#returning-date-picker {
+// 		width: 9rem;
+// 		margin-right: 1.5rem;
+// 	}
 
-	#departing-date-picker {
-		width: 9rem;
-		margin-left: 4.5rem;
-	}
+// 	#departing-date-picker {
+// 		width: 9rem;
+// 		margin-left: 4.5rem;
+// 	}
 
-	#adultNumber,
-	#childrenNumber,
-	#classType {
-		width: 9rem;
-	}
+// 	#adultNumber,
+// 	#childrenNumber,
+// 	#classType {
+// 		width: 9rem;
+// 	}
 
 	@media (max-width: 425px) {
 		.panel1011_firstDiv {
@@ -373,6 +373,12 @@ section.banner1 {
 		font-family: 'Courier New', Courier, monospace;
 		line-height: 15px;
 	}
+
+	.modal-text{
+		list-style: none;
+		padding-left: 0;
+	} 
+	
 	/*End of font style for the Summary Modal - Sabur Ahmed*/
 
 	@media only screen and (max-width: 768px) {
@@ -602,4 +608,4 @@ section.banner1 {
 	.uib-tab.nav-item.ng-scope.ng-isolate-scope a {
 		color: blue;
 	}
-}
+// }

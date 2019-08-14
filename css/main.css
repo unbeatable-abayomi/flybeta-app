@@ -175,38 +175,7 @@ section.banner1 {
   margin-right: -11rem;
 }
 
-@media (max-width: 1024px) {
-  #originFrom {
-    margin-left: -.8rem;
-  }
-  #returning-date-picker {
-    width: 13rem;
-    margin-left: 13.5rem;
-  }
-  .returning-text {
-    margin-right: -15rem;
-  }
-}
-
-@media (max-width: 768px) {
-  #originFrom,
-  #destinationTo,
-  #returning-date-picker {
-    width: 9rem;
-    margin-right: 1.5rem;
-  }
-  #departing-date-picker {
-    width: 9rem;
-    margin-left: 4.5rem;
-  }
-  #adultNumber,
-  #childrenNumber,
-  #classType {
-    width: 9rem;
-  }
-}
-
-@media (max-width: 768px) and (max-width: 425px) {
+@media (max-width: 425px) {
   .panel1011_firstDiv {
     margin-bottom: 10rem;
   }
@@ -246,7 +215,7 @@ section.banner1 {
   }
 }
 
-@media (max-width: 768px) and (max-width: 375px) {
+@media (max-width: 375px) {
   #originFrom,
   #destinationTo,
   #returning-date-picker,
@@ -266,7 +235,7 @@ section.banner1 {
   }
 }
 
-@media (max-width: 768px) and (max-width: 360px) {
+@media (max-width: 360px) {
   #originFrom,
   #destinationTo,
   #returning-date-picker,
@@ -278,7 +247,7 @@ section.banner1 {
   }
 }
 
-@media (max-width: 768px) and (max-width: 320px) {
+@media (max-width: 320px) {
   #originFrom,
   #destinationTo,
   #returning-date-picker,
@@ -290,24 +259,21 @@ section.banner1 {
   }
 }
 
-@media (max-width: 768px) {
-  /* abayomi styles end */
-}
-
-@media only screen and (max-width: 768px) and (max-width: 991px) {
+/* abayomi styles end */
+@media only screen and (max-width: 991px) {
   .mT-50 {
     margin-top: 50px !important;
   }
 }
 
-@media only screen and (max-width: 768px) and (max-width: 767px) {
+@media only screen and (max-width: 767px) {
   .centerElem {
     float: none !important;
     margin: 0 auto !important;
   }
 }
 
-@media only screen and (max-width: 768px) and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   section.banner {
     height: auto;
     padding: 0;
@@ -345,16 +311,19 @@ section.banner1 {
   }
 }
 
-@media (max-width: 768px) {
-  /*Font style for the Summary Modal - Sabur Ahmed.*/
-  .card-text {
-    font-family: 'Courier New', Courier, monospace;
-    line-height: 15px;
-  }
-  /*End of font style for the Summary Modal - Sabur Ahmed*/
+/*Font style for the Summary Modal - Sabur Ahmed.*/
+.card-text {
+  font-family: 'Courier New', Courier, monospace;
+  line-height: 15px;
 }
 
-@media only screen and (max-width: 768px) and (max-width: 768px) {
+.modal-text {
+  list-style: none;
+  padding-left: 0;
+}
+
+/*End of font style for the Summary Modal - Sabur Ahmed*/
+@media only screen and (max-width: 768px) {
   section.banner {
     height: auto;
     padding: 0;
@@ -392,7 +361,7 @@ section.banner1 {
   }
 }
 
-@media only screen and (max-width: 768px) and (max-width: 560px) {
+@media only screen and (max-width: 560px) {
   .view.ng-scope {
     height: 560px !important;
   }
@@ -420,7 +389,7 @@ section.banner1 {
   }
 }
 
-@media only screen and (max-width: 768px) and (max-width: 425px) {
+@media only screen and (max-width: 425px) {
   section.banner {
     height: auto;
     background: #001650;
@@ -451,7 +420,7 @@ section.banner1 {
   }
 }
 
-@media only screen and (max-width: 768px) and (max-width: 375px) {
+@media only screen and (max-width: 375px) {
   .whatwedo .tab-pane a {
     width: 150px;
   }
@@ -461,7 +430,7 @@ section.banner1 {
   }
 }
 
-@media only screen and (max-width: 768px) and (max-width: 360px) {
+@media only screen and (max-width: 360px) {
   section.banner {
     height: auto;
     background: #001650;
@@ -491,7 +460,7 @@ section.banner1 {
   }
 }
 
-@media only screen and (max-width: 768px) and (max-width: 320px) {
+@media only screen and (max-width: 320px) {
   section.banner {
     height: 160px;
     background: #001650;
@@ -514,32 +483,36 @@ section.banner1 {
   }
 }
 
-@media (max-width: 768px) {
-  .modal-dialog {
-    max-width: 1000px;
-  }
-  .waves-input-wrapper.waves-effect.waves-light {
-    width: 100%;
-  }
-  div#accordionEx5 {
-    width: 100%;
-  }
-  .panel-body {
-    padding: 20px 10px 0px 10px;
-    line-height: 1.6;
-    letter-spacing: 1px;
-    border: 1px solid;
-    margin: 0 0 10px;
-    text-align: justify;
-  }
-  .table.table-bordered tbody tr th {
-    color: #000;
-  }
-  .table.table-bordered tbody tr td {
-    color: #000;
-  }
-  .uib-tab.nav-item.ng-scope.ng-isolate-scope a {
-    color: blue;
-  }
+.modal-dialog {
+  max-width: 1000px;
+}
+
+.waves-input-wrapper.waves-effect.waves-light {
+  width: 100%;
+}
+
+div#accordionEx5 {
+  width: 100%;
+}
+
+.panel-body {
+  padding: 20px 10px 0px 10px;
+  line-height: 1.6;
+  letter-spacing: 1px;
+  border: 1px solid;
+  margin: 0 0 10px;
+  text-align: justify;
+}
+
+.table.table-bordered tbody tr th {
+  color: #000;
+}
+
+.table.table-bordered tbody tr td {
+  color: #000;
+}
+
+.uib-tab.nav-item.ng-scope.ng-isolate-scope a {
+  color: blue;
 }
 /*# sourceMappingURL=main.css.map */
