@@ -137,15 +137,151 @@
                                 <div class="row panel1011_firstDiv">
                                   <div class="col-md-3">
                                     <label class="black-text active" id="origin-text">Origin</label>
-                                    <input type="text" id="originFrom" class="form-control" placeholder="City, Airport"
-                                      required>
+
+                                    <!-- <input 
+                                    type="text" 
+                                    id="originFrom" 
+                                    class="form-control" 
+                                    placeholder="City, Airport"
+                                    required
+                                    /> -->
+
+                                    <input 
+                                    type="text" 
+                                    id="originFrom" 
+                                    list="datalist1"
+                                    placeholder="City, Airport"
+                                    required
+                                    />
+
+                                    <div>
+                                        <datalist id="datalist1">
+                                          <option value="Canada">
+                                          <option value="China">
+                                          <option value="Mexico">
+                                          <option value="United Kingdom">
+                                          <option value="United States of America">
+                                          <option value="Uruguay">
+    
+                                          <option value="Abia">
+                                          <option value="Adamawa">
+                                          <option value="Akwa Ibom">
+                                          <option value="Anambra">
+                                          <option value="Bauchi">
+                                          <option value="Bayelsa">
+    
+                                          <option value="Benue">
+                                          <option value="Borno">
+                                          <option value="Cross River">
+                                          <option value="Delta">
+                                          <option value="Ebonyi">
+                                          <option value="Edo">
+    
+                                          <option value="Ekiti">
+                                          <option value="Enugu">
+                                          <option value="Mexico">
+                                          <option value="Federal Capital Territory">
+                                          <option value="Gombe">
+                                          <option value="Imo">
+    
+                                          <option value="Jigawa">
+                                          <option value="Kaduna">
+                                          <option value="Kano">
+                                          <option value="Katsina">
+                                          <option value="Kebbi">
+                                          <option value="Kogi">
+    
+                                          <option value="Kwara">
+                                          <option value="Nasarawa">
+                                          <option value="Niger">
+                                          <option value="Ogun">
+                                          <option value="Ondo">
+                                          <option value="Osun">
+    
+                                          <option value="Oyo">
+                                          <option value="Plateau">
+                                          <option value="Rivers">
+                                          <option value="Sokoto">
+                                          <option value="Taraba">
+                                          <option value="Yobe">
+                                          <option value="Zamfara">
+                                          </datalist>
+                                          </div>
+
                                   </div>
                                   <div class="col-md-2">
                                     <label class="black-text destination-text">Destination</label>
 
-                                    <input type="text" id="destinationTo"
-                                      class="form-control ng-pristine ng-untouched ng-valid ng-empty ng-valid-maxlength"
-                                      placeholder="City, Airport" required>
+                                   
+                                    <!-- <input type="text" 
+                                    id="destinationTo"
+                                    list="destinationTo"
+                                    class="form-control ng-pristine ng-untouched ng-valid ng-empty ng-valid-maxlength"
+                                    placeholder="City, Airport" required
+                                    /> -->
+                                   
+                                    <input 
+                                    type="text" 
+                                    name="srch"
+                                    id="srch"
+                                    list="datalist2"
+                                    placeholder="City, Airport" 
+                                    required
+                                    />
+                                    <div>
+                                    <datalist id="datalist2">
+                                      <option value="Canada">
+                                      <option value="China">
+                                      <option value="Mexico">
+                                      <option value="United Kingdom">
+                                      <option value="United States of America">
+                                      <option value="Uruguay">
+
+                                      <option value="Abia">
+                                      <option value="Adamawa">
+                                      <option value="Akwa Ibom">
+                                      <option value="Anambra">
+                                      <option value="Bauchi">
+                                      <option value="Bayelsa">
+
+                                      <option value="Benue">
+                                      <option value="Borno">
+                                      <option value="Cross River">
+                                      <option value="Delta">
+                                      <option value="Ebonyi">
+                                      <option value="Edo">
+
+                                      <option value="Ekiti">
+                                      <option value="Enugu">
+                                      <option value="Mexico">
+                                      <option value="Federal Capital Territory">
+                                      <option value="Gombe">
+                                      <option value="Imo">
+
+                                      <option value="Jigawa">
+                                      <option value="Kaduna">
+                                      <option value="Kano">
+                                      <option value="Katsina">
+                                      <option value="Kebbi">
+                                      <option value="Kogi">
+
+                                      <option value="Kwara">
+                                      <option value="Nasarawa">
+                                      <option value="Niger">
+                                      <option value="Ogun">
+                                      <option value="Ondo">
+                                      <option value="Osun">
+
+                                      <option value="Oyo">
+                                      <option value="Plateau">
+                                      <option value="Rivers">
+                                      <option value="Sokoto">
+                                      <option value="Taraba">
+                                      <option value="Yobe">
+                                      <option value="Zamfara">
+                                      </datalist>
+                                      </div>
+
                                   </div>
                                   <div class="col-md-3">
 
@@ -263,8 +399,76 @@
                                  <div class="col-md-3" style="padding-left: 5px;    padding-right: 5px;">
                                    <label class="black-text">Where are you going?</label>
 
-                                   <input type="text" id="hotel_destination" class="form-control" placeholder="City"
-                                     required>
+                                  <!-- <input 
+                                   type="text" 
+                                   id="hotel_destination" 
+                                   class="form-control" 
+                                   placeholder="City"
+                                   required
+                                   /> -->
+
+
+                                   <input 
+                                   type="text" 
+                                   id="hotel_destination" 
+                                   class="form-control" 
+                                   list="datalist3"
+                                   placeholder="City"
+                                   required
+                                   />
+
+                                   <datalist id="datalist3">
+                                      <option value="Canada">
+                                      <option value="China">
+                                      <option value="Mexico">
+                                      <option value="United Kingdom">
+                                      <option value="United States of America">
+                                      <option value="Uruguay">
+
+                                      <option value="Abia">
+                                      <option value="Adamawa">
+                                      <option value="Akwa Ibom">
+                                      <option value="Anambra">
+                                      <option value="Bauchi">
+                                      <option value="Bayelsa">
+
+                                      <option value="Benue">
+                                      <option value="Borno">
+                                      <option value="Cross River">
+                                      <option value="Delta">
+                                      <option value="Ebonyi">
+                                      <option value="Edo">
+
+                                      <option value="Ekiti">
+                                      <option value="Enugu">
+                                      <option value="Mexico">
+                                      <option value="Federal Capital Territory">
+                                      <option value="Gombe">
+                                      <option value="Imo">
+
+                                      <option value="Jigawa">
+                                      <option value="Kaduna">
+                                      <option value="Kano">
+                                      <option value="Katsina">
+                                      <option value="Kebbi">
+                                      <option value="Kogi">
+
+                                      <option value="Kwara">
+                                      <option value="Nasarawa">
+                                      <option value="Niger">
+                                      <option value="Ogun">
+                                      <option value="Ondo">
+                                      <option value="Osun">
+
+                                      <option value="Oyo">
+                                      <option value="Plateau">
+                                      <option value="Rivers">
+                                      <option value="Sokoto">
+                                      <option value="Taraba">
+                                      <option value="Yobe">
+                                      <option value="Zamfara">
+                                      </datalist>
+
 
                                  </div>
                                  <div class="col-md-3" style="padding-left: 3px;    padding-right: 5px;">
@@ -616,21 +820,156 @@
                                 <div class="row">
 
                                   <div class="col-md-3" style="padding-left: 5px; padding-right: 5px;">
-                                    <label class="black-text">Form</label>
+                                    <label class="black-text">From</label>
+
+                                   <!-- <input
+                                    class="form-control ng-pristine ng-valid ng-empty ng-valid-maxlength ng-touched ng-untouched"
+                                    id="source_city" 
+                                    type="text" 
+                                    autocomplete="on" 
+                                    placeholder="Source city"
+                                    required
+                                    /> -->
+
                                     <input
-                                      class="form-control ng-pristine ng-valid ng-empty ng-valid-maxlength ng-touched ng-untouched"
-                                      id="source_city" type="text" autocomplete="on" placeholder="Source city"
-                                      required>
+                                    class="form-control ng-pristine ng-valid ng-empty ng-valid-maxlength ng-touched ng-untouched"
+                                    id="source_city" 
+                                    type="text" 
+                                    list="datalist4"
+                                    placeholder="Source city"
+                                    required
+                                    />
+
+                                    <datalist id="datalist4">
+                                        <option value="Canada">
+                                        <option value="China">
+                                        <option value="Mexico">
+                                        <option value="United Kingdom">
+                                        <option value="United States of America">
+                                        <option value="Uruguay">
+  
+                                        <option value="Abia">
+                                        <option value="Adamawa">
+                                        <option value="Akwa Ibom">
+                                        <option value="Anambra">
+                                        <option value="Bauchi">
+                                        <option value="Bayelsa">
+  
+                                        <option value="Benue">
+                                        <option value="Borno">
+                                        <option value="Cross River">
+                                        <option value="Delta">
+                                        <option value="Ebonyi">
+                                        <option value="Edo">
+  
+                                        <option value="Ekiti">
+                                        <option value="Enugu">
+                                        <option value="Mexico">
+                                        <option value="Federal Capital Territory">
+                                        <option value="Gombe">
+                                        <option value="Imo">
+  
+                                        <option value="Jigawa">
+                                        <option value="Kaduna">
+                                        <option value="Kano">
+                                        <option value="Katsina">
+                                        <option value="Kebbi">
+                                        <option value="Kogi">
+  
+                                        <option value="Kwara">
+                                        <option value="Nasarawa">
+                                        <option value="Niger">
+                                        <option value="Ogun">
+                                        <option value="Ondo">
+                                        <option value="Osun">
+  
+                                        <option value="Oyo">
+                                        <option value="Plateau">
+                                        <option value="Rivers">
+                                        <option value="Sokoto">
+                                        <option value="Taraba">
+                                        <option value="Yobe">
+                                        <option value="Zamfara">
+                                        </datalist>
+  
+
 
                                   </div>
                                   <div class="col-md-3" style="padding-left: 5px; padding-right: 5px;">
                                     <label class="black-text">
                                       To</label>
 
-                                    <input
+                                    <!-- <input
                                       class="form-control ng-pristine ng-valid ng-empty ng-valid-maxlength ng-touched ng-untouched"
-                                      type="text" autocomplete="" id="destination_city"
-                                      placeholder="Destination city" required>
+                                      type="text" 
+                                      autocomplete="" 
+                                      id="destination_city"
+                                      placeholder="Destination city" 
+                                      required
+                                      /> -->
+
+                                  <input
+                                      class="form-control ng-pristine ng-valid ng-empty ng-valid-maxlength ng-touched ng-untouched"
+                                      type="text" 
+                                      list="datalist5" 
+                                      id="destination_city"
+                                      placeholder="Destination city" 
+                                      required
+                                      />
+
+                                      <datalist id="datalist5">
+                                          <option value="Canada">
+                                          <option value="China">
+                                          <option value="Mexico">
+                                          <option value="United Kingdom">
+                                          <option value="United States of America">
+                                          <option value="Uruguay">
+    
+                                          <option value="Abia">
+                                          <option value="Adamawa">
+                                          <option value="Akwa Ibom">
+                                          <option value="Anambra">
+                                          <option value="Bauchi">
+                                          <option value="Bayelsa">
+    
+                                          <option value="Benue">
+                                          <option value="Borno">
+                                          <option value="Cross River">
+                                          <option value="Delta">
+                                          <option value="Ebonyi">
+                                          <option value="Edo">
+    
+                                          <option value="Ekiti">
+                                          <option value="Enugu">
+                                          <option value="Mexico">
+                                          <option value="Federal Capital Territory">
+                                          <option value="Gombe">
+                                          <option value="Imo">
+    
+                                          <option value="Jigawa">
+                                          <option value="Kaduna">
+                                          <option value="Kano">
+                                          <option value="Katsina">
+                                          <option value="Kebbi">
+                                          <option value="Kogi">
+    
+                                          <option value="Kwara">
+                                          <option value="Nasarawa">
+                                          <option value="Niger">
+                                          <option value="Ogun">
+                                          <option value="Ondo">
+                                          <option value="Osun">
+    
+                                          <option value="Oyo">
+                                          <option value="Plateau">
+                                          <option value="Rivers">
+                                          <option value="Sokoto">
+                                          <option value="Taraba">
+                                          <option value="Yobe">
+                                          <option value="Zamfara">
+                                          </datalist>
+
+
                                   </div>
 
                                   <div class="tab-content col-md-6">
