@@ -157,9 +157,9 @@ const pickup_meridiem = selector("#pickup_meridiem");
 const ticket_travelType = selector("#ticket_travelType");
 const ticket_sourceCity = selector("#ticket_sourceCity");
 const ticket_destinationCity = selector("#ticket_destinationCity");
-const ticket_multiCity_trip_date_2 = selector("#ticket_multiCity_trip_date_2");
-const ticket_multiCity_trip_date_1 = selector("#ticket_multiCity_trip_date_1");
-const ticket_one_way_trip_date = selector("#ticket_one_way_trip_date");
+// const ticket_multiCity_trip_date_2 = selector("#ticket_multiCity_trip_date_2");
+// const ticket_multiCity_trip_date_1 = selector("#ticket_multiCity_trip_date_1");
+// const ticket_one_way_trip_date = selector("#ticket_one_way_trip_date");
 const ticket_returnTrip_date = selector("#ticket_returnTrip_date");
 const ticket_round_trip_date = selector("#ticket_round_trip_date");
 const ticket_pickup_hours = selector("#ticket_pickup_hours");
@@ -223,12 +223,12 @@ carForm.addEventListener("submit", e => {
     "pickup_meridiem1_input"
   );
 
-  ticket_travelType.innerHTML = travel_type1_input;
+  // ticket_travelType.innerHTML = travel_type1_input;
   ticket_sourceCity.innerHTML = source_city1_input;
   ticket_destinationCity.innerHTML = destination_city1_input;
-  ticket_multiCity_trip_date_1.innerHTML = multiCity_trip_date_one_input;
-  ticket_multiCity_trip_date_2.innerHTML = multiCity_trip_date_two_input;
-  ticket_one_way_trip_date.innerHTML = one_way_trip_date1_input;
+  // ticket_multiCity_trip_date_1.innerHTML = multiCity_trip_date_one_input;
+  // ticket_multiCity_trip_date_2.innerHTML = multiCity_trip_date_two_input;
+  // ticket_one_way_trip_date.innerHTML = one_way_trip_date1_input;
   ticket_returnTrip_date.innerHTML = returnTrip_date1_input;
   ticket_round_trip_date.innerHTML = round_trip_date1_input;
   ticket_pickup_hours.innerHTML = pickup_hours1_input;
