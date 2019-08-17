@@ -3,6 +3,18 @@ body {
 		'Helvetica Neue', sans-serif;
 }
 
+.btn-outline-warning {
+	border: 1px solid #f80 !important;
+}
+.alert {
+	text-align: center;
+	padding: 10px;
+	background: #79c879;
+	color: #fff;
+	margin-bottom: 10px;
+	display: none;
+}
+
 .scrollbar {
 	float: left;
 	height: 170px;

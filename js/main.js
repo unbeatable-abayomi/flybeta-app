@@ -190,30 +190,92 @@ carForm.addEventListener('submit', (e) => {
 	ticket_pickup_meridiem.textContent = pickup_meridiem1_input;
 });
 
+// ALERT FOR SUCCESFUL SUBMISSION
+
+// Show alert
+// document.querySelector('.alert').style.display = 'block';
+
+// // Hide alert after 3 seconds
+// setTimeout(function () {
+// 	document.querySelector('.alert').style.display = 'none';
+// }, 3000);
+
+// // Clear form
+// document.getElementById('contactForm').reset();
 
 
-//jquery for increment/decrement
+
+//ADULT QUANTITY
 $(document).ready(function () {
-	const minus = $('.quantity__minus');
-	const plus = $('.quantity__plus');
-	const input = $('.quantity__input');
-	
-	minus.click(function (e) {
+	const adult_minus = $('.adult__minus');
+	const adult_plus = $('.adult__plus');
+	const adult_input = $('.adult-quantity__input');
+
+	// ADULT
+	adult_minus.click(function (e) {
 		e.preventDefault();
-		var value = input.val();
-		if (value > 1) {
-			value--;
+		var adultValue = adult_input.val();
+		if (adultValue > 1) {
+			adultValue--;
 		}
-		input.val(value);
-		console.log(value)
+		adult_input.val(adultValue);
+		console.log(adultValue)
 	});
 
-	plus.click(function (e) {
+	adult_plus.click(function (e) {
 		e.preventDefault();
-		var value = input.val();
-		value++;
-		input.val(value);
-		console.log(value)
+		var adultValue = adult_input.val();
+		adultValue++;
+		adult_input.val(adultValue);
+		console.log(adultValue)
 	})
-	
+
+
+	// CHILDREN
+	const children_minus = $('.children-minus');
+	const children_plus = $('.children-plus');
+	const children_input = $('.children-quantity__input');
+
+	children_minus.click(function (e) {
+		e.preventDefault();
+		var childrenValue = children_input.val();
+		if (childrenValue > 1) {
+			childrenValue--;
+		}
+		children_input.val(childrenValue);
+		console.log(childrenValue)
+	});
+
+	children_plus.click(function (e) {
+		e.preventDefault();
+		var childrenValue = children_input.val();
+		childrenValue++;
+		children_input.val(childrenValue);
+		console.log(childrenValue)
+	})
+
+
+	// ROOM
+	const room_minus = $('.room-minus');
+	const room_plus = $('.room-plus');
+	const room_input = $('.room-quantity__input');
+
+	room_minus.click(function (e) {
+		e.preventDefault();
+		var roomValue = room_input.val();
+		if (roomValue > 1) {
+			roomValue--;
+		}
+		room_input.val(roomValue);
+		console.log(roomValue)
+	});
+
+	room_plus.click(function (e) {
+		e.preventDefault();
+		var roomValue = room_input.val();
+		roomValue++;
+		room_input.val(roomValue);
+		console.log(roomValue)
+	})
 });
+
