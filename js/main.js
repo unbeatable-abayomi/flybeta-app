@@ -2,9 +2,10 @@ const selector = value => {
   return document.querySelector(value);
 };
 
+// const pricing = selector("#pricing")
+
 //FORM FOR FLIGHT
 const flightForm = selector("#flightForm");
-
 const origin = selector("#originFrom");
 const destination = selector("#destinationTo");
 const departingDate = selector("#departing-date-picker");
@@ -21,7 +22,7 @@ const ticket_adult = selector("#ticket_adult");
 const ticket_children = selector("#ticket_children");
 const ticket_classType = selector("#ticket_classType");
 
-flightForm.addEventListener("submit", e => {
+const flightFunction = flightForm.addEventListener("submit", e => {
   e.preventDefault();
   const origin1 = origin.value;
   const destination1 = destination.value;
@@ -83,7 +84,7 @@ const ticket_checkOut = selector("#ticket_checkOut");
 const ticket_room = selector("#ticket_room");
 const ticket_nationality = selector("#ticket_nationality");
 
-hotelForm.addEventListener("submit", e => {
+const hotelFunction = hotelForm.addEventListener("submit", e => {
   e.preventDefault();
   //display value of checked checkbox
   function checkboxChecked(boxArray) {
@@ -166,7 +167,7 @@ const ticket_pickup_hours = selector("#ticket_pickup_hours");
 const ticket_pickup_minutes = selector("#ticket_pickup_minutes");
 const ticket_pickup_meridiem = selector("#ticket_pickup_meridiem");
 
-carForm.addEventListener("submit", e => {
+const carFunction = carForm.addEventListener("submit", e => {
   e.preventDefault();
   selector("#summary").style.display = "block";
   // const travel_type1 = travel_type.options[travel_type.selectedIndex].value;
@@ -239,4 +240,49 @@ carForm.addEventListener("submit", e => {
     ticket_pickup_minutes.innerHTML = "";
     ticket_pickup_meridiem.innerHTML = "";
   }
+  console.log(ticket_sourceCity);
 });
+
+// Pricing Logic - Sabur Ahmed (not getting the desired result as at 7:53AM, 18th August, still on it.)
+if (
+  ticket_returnTrip_date.innerHTML === "" &&
+  ticket_checkIn.innerHTML === ""
+) {
+  pricing.innerHTML =
+    "#30,000. Fill the Flight and Hotel forms to get full price quote.";
+  console.log("John");
+} else if (
+  ticket_departing.innerHTML === "" &&
+  ticket_returnTrip_date.innerHTML === ""
+) {
+  pricing.innerHTML =
+    "#150,000. Fill the Flight and Ride forms to get full price quote.";
+  console.log("Mark");
+} else if (
+  ticket_returnTrip_date.innerHTML === "" &&
+  check_in_date.innerHTML === ""
+) {
+  pricing.innerHTML =
+    "#220,000. Fill the Flight and Ride forms to get full price quote.";
+  console.log("Mary");
+} else {
+  pricing.innerHTML = "#400,000";
+  console.log("It's a draw!");
+}
+
+// if (flightFunction === false && hotelFunction === false) {
+//   pricing.innerHTML =
+//     "#30,000. Fill the Flight and Hotel forms to get full price quote.";
+//   console.log("John");
+// } else if (flightFunction === false && carFunction === false) {
+//   pricing.innerHTML =
+//     "#150,000. Fill the Flight and Ride forms to get full price quote.";
+//   console.log("Mark");
+// } else if (hotelFunction === false && carFunction === false) {
+//   pricing.innerHTML =
+//     "#220,000. Fill the Flight and Ride forms to get full price quote.";
+//   console.log("Mary");
+// } else {
+//   pricing.innerHTML = "#400,000";
+//   console.log("It's a draw!");
+// };

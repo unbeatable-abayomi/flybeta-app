@@ -377,8 +377,16 @@ section.banner1 {
 	.modal-text{
 		list-style: none;
 		padding-left: 0;
-	} 
+	} 	
+
+	#pricing {
+		font-weight: bold;
+		font-size: 2rem;
+  	}
 	
+	  .pricing-text {
+		  font-size: 1rem;
+	  }
 	/*End of font style for the Summary Modal - Sabur Ahmed*/
 
 	@media only screen and (max-width: 768px) {
