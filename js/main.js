@@ -240,27 +240,3 @@ carForm.addEventListener("submit", e => {
     ticket_pickup_meridiem.innerHTML = "";
   }
 });
-
-
-// For Airport Autocomple - Sabur Ahmed
-var options = {
-	shouldSort: true,
-	threshold: 0.4,
-	maxPatternLength: 32,
-	keys: [
-	  {
-		name: "iata",
-		weight: 0.5
-	  },
-	  {
-		name: "name",
-		weight: 0.3
-	  },
-	  {
-		name: "city",
-		weight: 0.2
-	  }
-	]
-  };
-  
-  
