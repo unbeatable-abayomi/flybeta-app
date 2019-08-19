@@ -28,8 +28,13 @@ const flightFunction = flightForm.addEventListener("submit", e => {
   const destination1 = destination.value;
   const departingDate1 = departingDate.value;
   // const returningDate1 = returningDate.value;
-  const adult1 = adult.options[adult.selectedIndex].value;
-  const children1 = children.options[children.selectedIndex].value;
+  // const adult1 = adult.options[adult.selectedIndex].value;
+  // const children1 = children.options[children.selectedIndex].value;
+
+	// JIDE MODIFICATIONS
+	const adult1 = adult.value;
+	const children1 = children.value;
+
   const classType1 = classType.options[classType.selectedIndex].value;
   sessionStorage.setItem("origin_input", origin1);
   sessionStorage.setItem("destination1_input", destination1);
@@ -65,7 +70,20 @@ const flightFunction = flightForm.addEventListener("submit", e => {
     ticket_children.innerHTML === "N/A";
   }
 
-  console.log(origin_input);
+  console.log(origin_input, adult1, children1);
+
+   // ALERT FOR SUCCESFUL SUBMISSION
+
+   // Show alert
+   document.querySelector('.alert').style.display = 'block';
+
+   // Hide alert after 3 seconds
+   setTimeout(function () {
+   	document.querySelector('.alert').style.display = 'none';
+   }, 3000);
+
+   // Clear form
+   document.getElementById('flightForm').reset();
 });
 
 // // FORM FOR HOTEL
@@ -76,7 +94,8 @@ const hotel_preference = selector("#hotel_preference");
 const check_in_date = selector("#check_in_date");
 const check_out_date = selector("#check_out_date");
 const nationality = selector("#nationality");
-let checkBox = [...document.querySelectorAll('input[type="radio"]')];
+// let checkBox = [...document.querySelectorAll('input[type="radio"]')];
+let checkBox = selector("#roomNumber");
 const ticket_city = selector("#ticket_city");
 const ticket_hotelPreference = selector("#ticket_hotelPreference");
 const ticket_checkIn = selector("#ticket_checkIn");
@@ -88,23 +107,25 @@ const hotelFunction = hotelForm.addEventListener("submit", e => {
   e.preventDefault();
 
   //display value of checked checkbox
-  function checkboxChecked(boxArray) {
-    var ArgLength = boxArray.length;
-    let checked = [];
-    for (var i = 0; i < ArgLength; i++) {
-      if (boxArray[i].checked) {
-        checked.push(boxArray[i].value);
-      }
-    }
-    return checked;
-  }
+//   function checkboxChecked(boxArray) {
+//     var ArgLength = boxArray.length;
+//     let checked = [];
+//     for (var i = 0; i < ArgLength; i++) {
+//       if (boxArray[i].checked) {
+//         checked.push(boxArray[i].value);
+//       }
+//     }
+//     return checked;
+//   }
+
   const hotel_destination1 = hotel_destination.value;
   const hotel_preference1 =
-    hotel_preference.options[hotel_preference.selectedIndex].value;
+  hotel_preference.options[hotel_preference.selectedIndex].value;
   const check_in_date1 = check_in_date.value;
   const check_out_date1 = check_out_date.value;
   const nationality1 = nationality.options[nationality.selectedIndex].value;
-  const room_number1 = checkboxChecked(checkBox);
+//   const room_number1 = checkboxChecked(checkBox);
+  const room_number1 = checkBox.value;
 
   sessionStorage.setItem("hotel_destination1_input", hotel_destination1);
   sessionStorage.setItem("hotel_preference1_input", hotel_preference1);
@@ -137,6 +158,21 @@ const hotelFunction = hotelForm.addEventListener("submit", e => {
   if (ticket_room.innerHTML === "") {
     ticket_room.innerHTML = "N/A";
   }
+
+  console.log(room_number1)
+
+   // ALERT FOR SUCCESFUL SUBMISSION
+
+   // Show alert
+   document.querySelector('.alert').style.display = 'block';
+
+   // Hide alert after 3 seconds
+   setTimeout(function () {
+   	document.querySelector('.alert').style.display = 'none';
+   }, 3000);
+
+   // Clear form
+   document.getElementById('hotelForm').reset();
 });
 
 // FORM FOR RIDE
@@ -242,6 +278,19 @@ const carFunction = carForm.addEventListener("submit", e => {
     ticket_pickup_meridiem.innerHTML = "";
   }
   console.log(ticket_sourceCity);
+
+  // ALERT FOR SUCCESFUL SUBMISSION
+
+  // Show alert
+  document.querySelector('.alert').style.display = 'block';
+
+  // Hide alert after 3 seconds
+  setTimeout(function () {
+  	document.querySelector('.alert').style.display = 'none';
+  }, 3000);
+
+  // Clear form
+  document.getElementById('carForm').reset();
 });
 
 // Pricing Logic - Sabur Ahmed (not getting the desired result as at 7:53AM, 18th August, still on it.)
@@ -292,21 +341,6 @@ if (
 
 // OLAJIDE
 
-// ALERT FOR SUCCESFUL SUBMISSION
-
-// Show alert
-// document.querySelector('.alert').style.display = 'block';
-
-// // Hide alert after 3 seconds
-// setTimeout(function () {
-// 	document.querySelector('.alert').style.display = 'none';
-// }, 3000);
-
-// // Clear form
-// document.getElementById('contactForm').reset();
-
-
-
 //ADULT QUANTITY
 $(document).ready(function () {
 	const adult_minus = $('.adult__minus');
@@ -341,7 +375,7 @@ $(document).ready(function () {
 	children_minus.click(function (e) {
 		e.preventDefault();
 		var childrenValue = children_input.val();
-		if (childrenValue > 1) {
+		if (childrenValue > 0) {
 			childrenValue--;
 		}
 		children_input.val(childrenValue);
