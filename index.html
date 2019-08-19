@@ -75,12 +75,10 @@
       </div>       
     </nav>
 
-    
+     <!-- alert -->
+     <div class="alert">Your message has been sent</div>
 
 
-
-    
-    
       <div class="view banner" style="background-image: url('https://mdbootstrap.com/img/Photos/Others/images/94.jpg'); background-repeat: no-repeat; height:500px; background-size: cover;">
               <!-- Mask & flexbox options-->
         <div class="mask rgba-black-light justify-content-center align-items-center">
@@ -310,6 +308,15 @@
 
                                   <div class="col-md-3" style="padding-left: 3px;    padding-right: 5px;">
                                     <label class="black-text active adult-text">Adults</label>
+
+                                    <!-- QUANTITY OF ADULTS -->
+                                    <div class="quantity">
+                                      <a href="#" class="quantity__minus adult__minus"><span>-</span></a>
+                                      <input name="quantity" type="text" class="quantity__input adult-quantity__input"
+                                        value="1">
+                                      <a href="#" class="quantity__plus adult__plus"><span>+</span></a>
+                                    </div>
+                                    
                                     <select class="mdb-select ng-pristine ng-untouched ng-valid ng-empty"
                                       autocomplete="on" style=" border: 1px solid #ced4da;
                                                     border-radius: .25rem; 
@@ -333,6 +340,13 @@
                                   </div>
                                   <div class="col-md-2" style="padding-left: 5px; padding-right: 5px;">
                                     <label class="black-text children-text">Children</label>
+
+                                    <!-- QUANTITY OF CHILDREN -->
+                                      <div class="quantity">
+                                        <a href="#" class="quantity__minus children-minus"><span>-</span></a>
+                                        <input name="quantity" type="text" class="quantity__input children-quantity__input" value="0">
+                                        <a href="#" class="quantity__plus children-plus"><span>+</span></a>
+                                      </div>
                                     <select class="mdb-select ng-pristine ng-untouched ng-valid ng-empty"
                                       autocomplete="on" style=" border: 1px solid #ced4da;
                                                     border-radius: .25rem;
@@ -525,6 +539,13 @@
                                <div class="row">
                                  <div class="col-md-3" style="padding-left: 5px;    padding-right: 5px;">
                                    <label class="black-text">Room</label><br>
+
+                                  <!-- QUANTITY OF ROOMS -->
+                                  <div class="quantity">
+                                    <a href="#" class="quantity__minus room-minus"><span>-</span></a>
+                                    <input name="quantity" type="text" class="quantity__input room-quantity__input" value="1">
+                                    <a href="#" class="quantity__plus room-plus"><span>+</span></a>
+                                  </div>
 
                                    <!-- Default inline 1-->
                                    <div class="custom-control custom-radio custom-control-inline">
