@@ -153,18 +153,8 @@ section.banner1 {
   margin-bottom: 1rem;
 }
 
-#adultNumber,
-#childrenNumber,
-#classType #flight_saveAndBook {
-  width: 13rem;
-}
-
 .departing-text {
   margin-right: -7rem;
-}
-
-#childrenNumber {
-  margin-left: 0.5rem;
 }
 
 #classType {

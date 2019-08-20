@@ -76,7 +76,7 @@
     </nav>
 
      <!-- alert -->
-     <div class="alert">Your message has been sent</div>
+     <div class="alert">Submitted Succesfully, Proceed --></div>
 
 
       <div class="view banner" style="background-image: url('https://mdbootstrap.com/img/Photos/Others/images/94.jpg'); background-repeat: no-repeat; height:500px; background-size: cover;">
@@ -306,37 +306,18 @@
                                 </div>
                                 <div class="row belowDiv">
 
-                                  <div class="col-md-3" style="padding-left: 3px;    padding-right: 5px;">
+                                  <div class="col-md-3" style="padding-left: 3px; padding-right: 5px;">
                                     <label class="black-text active adult-text">Adults</label>
 
                                     <!-- QUANTITY OF ADULTS -->
                                     <div class="quantity">
                                       <a href="#" class="quantity__minus adult__minus"><span>-</span></a>
                                       <input name="quantity" type="text" class="quantity__input adult-quantity__input"
-                                        value="1">
+                                        value="1"
+                                        id="adultNumber"
+                                        >
                                       <a href="#" class="quantity__plus adult__plus"><span>+</span></a>
                                     </div>
-                                    
-                                    <select class="mdb-select ng-pristine ng-untouched ng-valid ng-empty"
-                                      autocomplete="on" style=" border: 1px solid #ced4da;
-                                                    border-radius: .25rem; 
-                                                    height: 40px;" id="adultNumber">
-                                      <option selected="selected">
-                                        0
-                                      </option>
-                                      <option>
-                                        1
-                                      </option>
-                                      <option>
-                                        2
-                                      </option>
-                                      <option>
-                                        3
-                                      </option>
-                                      <option>
-                                        4
-                                      </option>
-                                    </select>
                                   </div>
                                   <div class="col-md-2" style="padding-left: 5px; padding-right: 5px;">
                                     <label class="black-text children-text">Children</label>
@@ -344,30 +325,12 @@
                                     <!-- QUANTITY OF CHILDREN -->
                                       <div class="quantity">
                                         <a href="#" class="quantity__minus children-minus"><span>-</span></a>
-                                        <input name="quantity" type="text" class="quantity__input children-quantity__input" value="0">
+                                        <input name="quantity" type="text" class="quantity__input children-quantity__input" 
+                                        value="0"
+                                        id="childrenNumber"
+                                        >
                                         <a href="#" class="quantity__plus children-plus"><span>+</span></a>
                                       </div>
-                                    <select class="mdb-select ng-pristine ng-untouched ng-valid ng-empty"
-                                      autocomplete="on" style=" border: 1px solid #ced4da;
-                                                    border-radius: .25rem;
-                                                    height: 40px;" id="childrenNumber">
-                                      <option selected="selected">0</option>
-                                      <option>
-                                        1
-                                      </option>
-                                      <option>
-                                        2
-                                      </option>
-                                      <option>
-                                        3
-                                      </option>
-                                      <option>
-                                        4
-                                      </option>
-                                      <option>
-                                        5
-                                      </option>
-                                    </select>
                                   </div>
                                   <div class="col-md-2" style="padding-left: 5px; padding-right: 0px;">
                                     <label class="black-text active classtype_text">Class Type</label>
@@ -494,27 +457,22 @@
                                    <select class="mdb-select ng-pristine ng-untouched ng-valid ng-empty" style=" border: 1px solid #ced4da;
                                                     border-radius: .25rem;   width: 100%;
                                                     height: 40px;" name="mobile_operator" id="hotel_preference">
-                                     <option value="? undefined:undefined ?" selected="selected"></option>
-                                     <!-- ngRepeat: dth in myData2 -->
-                                     <option ng-repeat="dth in myData2" ng-selected="goperator === operator.id"
-                                       selected="selected">
-                                       All
-                                     </option><!-- end ngRepeat: dth in myData2 -->
-                                     <option ng-repeat="dth in myData2" ng-selected="goperator === operator.id"
-                                       selected="selected">
+                                     <option ng-repeat="dth in myData2" ng-selected="goperator === operator.id">
                                        5 Star
                                      </option><!-- end ngRepeat: dth in myData2 -->
-                                     <option ng-repeat="dth in myData2" ng-selected="goperator === operator.id"
-                                       selected="selected">
+                                     <option ng-repeat="dth in myData2" ng-selected="goperator === operator.id">
                                        4 Star
                                      </option><!-- end ngRepeat: dth in myData2 -->
-                                     <option ng-repeat="dth in myData2" ng-selected="goperator === operator.id"
-                                       selected="selected">
+                                     <option ng-repeat="dth in myData2" ng-selected="goperator === operator.id">
                                        3 Star
                                      </option><!-- end ngRepeat: dth in myData2 -->
-                                     <option ng-repeat="dth in myData2" ng-selected="goperator === operator.id">
+                                     <option ng-repeat="dth in myData2" ng-selected="goperator === operator.id"
+                                       selected="selected">
                                        2 Star
                                      </option><!-- end ngRepeat: dth in myData2 -->
+                                     <option ng-repeat="dth in myData2" ng-selected="goperator === operator.id">
+                                       1 Star
+                                     </option>
                                    </select>
                                  </div>
 
@@ -543,11 +501,14 @@
                                   <!-- QUANTITY OF ROOMS -->
                                   <div class="quantity">
                                     <a href="#" class="quantity__minus room-minus"><span>-</span></a>
-                                    <input name="quantity" type="text" class="quantity__input room-quantity__input" value="1">
+                                    <input name="quantity" type="text" class="quantity__input room-quantity__input" 
+                                    value="1"
+                                    id="roomNumber"
+                                    >
                                     <a href="#" class="quantity__plus room-plus"><span>+</span></a>
                                   </div>
 
-                                   <!-- Default inline 1-->
+                                   <!-- Default inline 1
                                    <div class="custom-control custom-radio custom-control-inline">
                                      <input type="radio" class="custom-control-input" value="1" id="defaultInline1"
                                        name="inlineDefaultRadiosExample">
@@ -555,18 +516,18 @@
                                    </div>
 
                                    <!-- Default inline 2-->
-                                   <div class="custom-control custom-radio custom-control-inline">
+                                   <!-- <div class="custom-control custom-radio custom-control-inline">
                                      <input type="radio" class="custom-control-input" value="2" id="defaultInline2"
                                        name="inlineDefaultRadiosExample">
                                      <label class="custom-control-label orange-text" for="defaultInline2">2</label>
-                                   </div>
+                                   </div> -->
 
                                    <!-- Default inline 3-->
-                                   <div class="custom-control custom-radio custom-control-inline">
+                                   <!-- <div class="custom-control custom-radio custom-control-inline">
                                      <input type="radio" class="custom-control-input" value="3" id="defaultInline3"
                                        name="inlineDefaultRadiosExample">
                                      <label class="custom-control-label orange-text" for="defaultInline3">3</label>
-                                   </div>
+                                   </div> --> 
 
                                  </div>
                                  <div class="col-md-3" style="padding-left: 3px;    padding-right: 5px;">
