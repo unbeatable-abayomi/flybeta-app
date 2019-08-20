@@ -22,7 +22,7 @@ const ticket_adult = selector("#ticket_adult");
 const ticket_children = selector("#ticket_children");
 const ticket_classType = selector("#ticket_classType");
 
-const flightFunction = flightForm.addEventListener("submit", e => {
+flightForm.addEventListener("submit", e => {
   e.preventDefault();
   const origin1 = origin.value;
   const destination1 = destination.value;
@@ -92,7 +92,7 @@ const flightFunction = flightForm.addEventListener("submit", e => {
    document.getElementById('flightForm').reset();
 });
 
-// // FORM FOR HOTEL
+// FORM FOR HOTEL
 const hotelForm = selector("#hotelForm");
 
 const hotel_destination = selector("#hotel_destination");
@@ -109,7 +109,7 @@ const ticket_checkOut = selector("#ticket_checkOut");
 const ticket_room = selector("#ticket_room");
 const ticket_nationality = selector("#ticket_nationality");
 
-const hotelFunction = hotelForm.addEventListener("submit", e => {
+hotelForm.addEventListener("submit", e => {
   e.preventDefault();
 
   //display value of checked checkbox
@@ -219,9 +219,9 @@ const ticket_pickup_hours = selector("#ticket_pickup_hours");
 const ticket_pickup_minutes = selector("#ticket_pickup_minutes");
 const ticket_pickup_meridiem = selector("#ticket_pickup_meridiem");
 
-const carFunction = carForm.addEventListener("submit", e => {
+carForm.addEventListener("submit", e => {
   e.preventDefault();
-  selector("#summary").style.display = "block";
+  selector("#summary").style.display = "initial";
   // const travel_type1 = travel_type.options[travel_type.selectedIndex].value;
   const source_city1 = source_city.value;
   const destination_city1 = destination_city.value;
@@ -253,6 +253,7 @@ const carFunction = carForm.addEventListener("submit", e => {
   sessionStorage.setItem("pickup_hours1_input", pickup_hours1);
   sessionStorage.setItem("pickup_minutes1_input", pickup_minutes1);
   sessionStorage.setItem("pickup_meridiem1_input", pickup_meridiem1);
+  sessionStorage.setItem("car_price_container", car_price);
   const travel_type1_input = sessionStorage.getItem("travel_type1_input");
   const source_city1_input = sessionStorage.getItem("source_city1_input");
   const destination_city1_input = sessionStorage.getItem(
