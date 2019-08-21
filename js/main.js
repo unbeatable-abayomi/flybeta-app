@@ -206,7 +206,7 @@ const ticket_pickup_meridiem = selector("#ticket_pickup_meridiem");
 
 const carFunction = carForm.addEventListener("submit", e => {
   e.preventDefault();
-  selector("#summary").style.display = "block";
+  selector("#summary").style.display = "initial";
   // const travel_type1 = travel_type.options[travel_type.selectedIndex].value;
   const source_city1 = source_city.value;
   const destination_city1 = destination_city.value;
