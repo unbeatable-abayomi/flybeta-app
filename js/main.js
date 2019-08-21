@@ -294,22 +294,22 @@ const carFunction = carForm.addEventListener("submit", e => {
 });
 
 // Pricing Logic - Sabur Ahmed (not getting the desired result as at 7:53AM, 18th August, still on it.)
-if (ticket_returnTrip_date.innerHTML === '' && ticket_checkIn.innerHTML === '') {
-	pricing.innerHTML = '#30,000. Fill the Flight and Hotel forms to get full price quote.';
-	console.log('John');
-}
-else if (ticket_departing.innerHTML === '' && ticket_returnTrip_date.innerHTML === '') {
-	pricing.innerHTML = '#150,000. Fill the Flight and Ride forms to get full price quote.';
-	console.log('Mark');
-}
-else if (ticket_returnTrip_date.innerHTML === '' && check_in_date.innerHTML === '') {
-	pricing.innerHTML = '#220,000. Fill the Flight and Ride forms to get full price quote.';
-	console.log('Mary');
-}
-else {
-	pricing.innerHTML = '#400,000';
-	console.log("It's a draw!");
-}
+// if (ticket_returnTrip_date.innerHTML === '' && ticket_checkIn.innerHTML === '') {
+// 	pricing.innerHTML = '#30,000. Fill the Flight and Hotel forms to get full price quote.';
+// 	console.log('John');
+// }
+// else if (ticket_departing.innerHTML === '' && ticket_returnTrip_date.innerHTML === '') {
+// 	pricing.innerHTML = '#150,000. Fill the Flight and Ride forms to get full price quote.';
+// 	console.log('Mark');
+// }
+// else if (ticket_returnTrip_date.innerHTML === '' && check_in_date.innerHTML === '') {
+// 	pricing.innerHTML = '#220,000. Fill the Flight and Ride forms to get full price quote.';
+// 	console.log('Mary');
+// }
+// else {
+// 	pricing.innerHTML = '#400,000';
+// 	console.log("It's a draw!");
+// }
 
 // if (flightFunction === false && hotelFunction === false) {
 //   pricing.innerHTML =
@@ -414,3 +414,12 @@ $(document).ready(function() {
 		console.log(roomValue);
 	});
 });
+
+
+
+
+
+
+
+
+
