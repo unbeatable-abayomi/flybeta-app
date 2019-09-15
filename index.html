@@ -1231,95 +1231,98 @@
                             <!-- johnson code end -->
                           
                   <!-- These are the codes for the pop-up modal by Sabur Ahmed -->
-                              <div id="summaryModal" class="modal fade" tabindex="-1" role="dialog">
-                                  <div class="modal-dialog" role="document">
-                                    <div class="modal-content">
-                                      <div class="modal-header bg-light d-flex px-3 justify-content-between">
-                                          <h4 class="modal-title text-dark">John Doe</h4>
-                                          <a href="#"><img src="img/logo.png" width="130px" alt="Flybeta logo"></a>                                        
-                                        
-                                      </div>
-                                      <div class="modal-body">
-                                        <p class="text-dark">This is the summary of all your bookings.</p>                      
-                                        <div class="px-5 card-group">
-                                        <div class="card border-warning mb-3 lg-12 rounded" style="max-width: 20rem;">
-                                            <div class="card-header bg-warning text-white"><i class="fa fa-plane fa-1x px-2 py-1" aria-hidden="true"></i>FLIGHT</div>
-                                            <div class="card-body text-primary">
-                                            
-                                              <div class="card-text text-dark text-left">
-                                                  <div id = 'flight_info'> 
-                                                    <ul class="modal-text">
-                                                        <li class="popup__text" ><strong>Origin:</strong> <span id='ticket_origin'></span></li>
-                                                        <li class="popup__text" ><strong>Destination:</strong><span id='ticket_destination'></span></li>
-                                                        <li class="popup__text" ><strong>Adult:</strong> <span id='ticket_adult'></span></li>
-                                                        <li class="popup__text" ><strong>Departing Date:</strong> <span id='ticket_departing'></span></li>
-                                                        <li class="popup__text" ><strong>Returning Date:</strong> <span id='ticket_returning'></span></li>
-                                                        <li class="popup__text" ><strong>Children:</strong> <span id='ticket_children'></span></li>
-                                                        <li class="popup__text" ><strong>Class Type:</strong> <span id='ticket_classType'></span></li>
-                                                    </ul>
-                                                </div>
-                                              </div>
-                                            </div>
-                                          </div>
-
-                                          <div class="card border-warning mb-3 lg-12 rounded" style="max-width: 20rem;">
-                                            <div class="card-header bg-warning text-white"><i class="fa fa-home fa-1x px-2 py-1" aria-hidden="true"></i>HOTEL</div>
-                                            <div class="card-body text-secondary">
-                                            
-                                            <div class="card-text text-dark text-left">
-                                                  <div id="hotel_info">
-                                                    <ul class="modal-text">
-                                                      <li class="popup__text" ><strong>City:</strong> <span id='ticket_city'></span></li>
-                                                      <li class="popup__text" ><strong>Hotel Preference:</strong> <span id='ticket_hotelPreference'></span></li>
-                                                      <li class="popup__text" ><strong>Check-In Date:</strong> <span id='ticket_checkIn'></span></li>
-                                                      <li class="popup__text" ><strong>Check-out Date:</strong> <span id='ticket_checkOut'></span></li>
-                                                      <li class="popup__text" ><strong>Nationality:</strong> <span id='ticket_nationality'></span></li>
-                                                      <li class="popup__text" ><strong>Room:</strong> <span id='ticket_room'></span></li>
-                                                  </ul>
-                                                  </div>
-                                                </div>
-                                            </div>
-                                          </div>
-
-                                          <div class="card border-warning mb-3 lg-12 rounded" style="max-width: 20rem;">
-                                            <div class="card-header bg-warning text-white"><i class="fa fa-car fa-1x px-2 py-1" aria-hidden="true"></i>CAR</div>
-                                            <div class="card-body text-success">
-                                            
-                                              <div class="card-text text-dark text-left">
-                                                <ul class="modal-text">
-                                                <!-- <li class="popup__text" ><strong>Travel Type:</strong> <span id='ticket_travelType'></span></li> -->
-                                                <li class="popup__text" ><strong>Source City:</strong> <span id='ticket_sourceCity'></span></li>
-                                                <li class="popup__text" ><strong>Destination City:</strong> <span id='ticket_destinationCity'></span></li>
-                                                <!-- <li class="popup__text" ><strong>Multi-City-Trip Date2:</strong> <span id='ticket_multiCity_trip_date_2'></span></li> -->
-                                                <!-- <li class="popup__text" ><strong>Multi-City-Trip Date1:</strong> <span id='ticket_multiCity_trip_date_1'></span></li> -->
-                                                <!-- <li class="popup__text" ><strong>One way Trip:</strong> <span id='ticket_one_way_trip_date'></span></li> -->
-                                                <li class="popup__text" ><strong>Return-Date:</strong> <span id='ticket_returnTrip_date'></span></li>
-                                                <li class="popup__text" ><strong>Round-Trip Date:</strong> <span id='ticket_round_trip_date'></span></li>
-                                                <li class="popup__text" ><strong>Pick-Up Time:</strong> <span id='ticket_pickup_hours'></span>                                                                                          <span id='ticket_pickup_minutes'></span>
-                                                                                         <span id='ticket_pickup_meridiem'></span></li>
-                                               
-                                            </ul>
-                                            </div>
-                                          </div>
-                                          </div>
-                                        </div>
-                                        <!-- pricing text below - Sabur Ahmed-->
-                                        <h4 class="text-dark">Total Fee: <span id="pricing"></span> </h4>
-                                      </div>
-
-                                      <div class="modal-footer">
-                                        <a href="https://paystack.com/pay/flybetabook" type="button" class="btn btn-warning">Proceed to Payment</a>
-                                        <button type="button" class="btn btn-light" data-dismiss="modal">Close</button>
-                                      </div>
-                                    </div>
+                  <div id="summaryModal" class="modal fade" tabindex="-1" role="dialog">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header bg-light d-flex px-3 justify-content-between">
+                            <h4 class="modal-title text-dark">John Doe</h4>
+                            <a href="#"><img src="img/logo.png" width="130px" alt="Flybeta logo"></a>                                        
+                          
+                        </div>
+                        <div class="modal-body">
+                          <p class="text-dark">This is the summary of all your bookings.</p>                      
+                          <div class="px-5 card-group">
+                          <div class="card border-warning mb-3 lg-12 rounded" style="max-width: 20rem;">
+                              <div class="card-header bg-warning text-white"><i class="fa fa-plane fa-1x px-2 py-1" aria-hidden="true"></i>FLIGHT</div>
+                              <div class="card-body text-primary">
+                              
+                                <div class="card-text text-dark text-left">
+                                    <div id = 'flight_info'> 
+                                      <ul class="modal-text">
+                                          <li class="popup__text" ><strong>Origin:</strong> <span id='ticket_origin'></span></li>
+                                          <li class="popup__text" ><strong>Destination:</strong><span id='ticket_destination'></span></li>
+                                          <li class="popup__text" ><strong>Adult:</strong> <span id='ticket_adult'></span></li>
+                                          <li class="popup__text" ><strong>Departing Date:</strong> <span id='ticket_departing'></span></li>
+                                          <li class="popup__text" ><strong>Returning Date:</strong> <span id='ticket_returning'></span></li>
+                                          <li class="popup__text" ><strong>Children:</strong> <span id='ticket_children'></span></li>
+                                          <li class="popup__text" ><strong>Class Type:</strong> <span id='ticket_classType'></span></li>                                                        
+                                      </ul>
                                   </div>
                                 </div>
-                                
+                              </div>
+                              <p class="popup__text text-dark" ><strong>Price:</strong> <span id='flight_price'>0</span></p>
+                            </div>
 
-                        
+                            <div class="card border-warning mb-3 lg-12 rounded" style="max-width: 20rem;">
+                              <div class="card-header bg-warning text-white"><i class="fa fa-home fa-1x px-2 py-1" aria-hidden="true"></i>HOTEL</div>
+                              <div class="card-body text-secondary">
+                              
+                              <div class="card-text text-dark text-left">
+                                    <div id="hotel_info">
+                                      <ul class="modal-text">
+                                        <li class="popup__text" ><strong>City:</strong> <span id='ticket_city'></span></li>
+                                        <li class="popup__text" ><strong>Hotel Preference:</strong> <span id='ticket_hotelPreference'></span></li>
+                                        <li class="popup__text" ><strong>Check-In Date:</strong> <span id='ticket_checkIn'></span></li>
+                                        <li class="popup__text" ><strong>Check-out Date:</strong> <span id='ticket_checkOut'></span></li>
+                                        <li class="popup__text" ><strong>Nationality:</strong> <span id='ticket_nationality'></span></li>
+                                        <li class="popup__text" ><strong>Room:</strong> <span id='ticket_room'></span></li>                                                      
+                                    </ul>                                                  
+                                    </div>
+                                  </div>
+                              </div>
+                              <p class="popup__text text-dark" ><strong>Price:</strong> <span id='hotel_price'>0</span></p>
+                            </div>
 
+                            <div class="card border-warning mb-3 lg-12 rounded" style="max-width: 20rem;">
+                              <div class="card-header bg-warning text-white"><i class="fa fa-car fa-1x px-2 py-1" aria-hidden="true"></i>CAR</div>
+                              <div class="card-body text-success">
+                              
+                                <div class="card-text text-dark text-left">
+                                  <ul class="modal-text">
+                                  <!-- <li class="popup__text" ><strong>Travel Type:</strong> <span id='ticket_travelType'></span></li> -->
+                                  <li class="popup__text" ><strong>Source City:</strong> <span id='ticket_sourceCity'></span></li>
+                                  <li class="popup__text" ><strong>Destination City:</strong> <span id='ticket_destinationCity'></span></li>
+                                  <!-- <li class="popup__text" ><strong>Multi-City-Trip Date2:</strong> <span id='ticket_multiCity_trip_date_2'></span></li> -->
+                                  <!-- <li class="popup__text" ><strong>Multi-City-Trip Date1:</strong> <span id='ticket_multiCity_trip_date_1'></span></li> -->
+                                  <!-- <li class="popup__text" ><strong>One way Trip:</strong> <span id='ticket_one_way_trip_date'></span></li> -->
+                                  <li class="popup__text" ><strong>Return-Date:</strong> <span id='ticket_returnTrip_date'></span></li>
+                                  <li class="popup__text" ><strong>Round-Trip Date:</strong> <span id='ticket_round_trip_date'></span></li>
+                                  <li class="popup__text" ><strong>Pick-Up Time:</strong> <span id='ticket_pickup_hours'></span>                                                                                          <span id='ticket_pickup_minutes'></span>
+                                                                           <span id='ticket_pickup_meridiem'></span></li>                                                                                              
+                              </ul>                                            
+                              </div>
+                            </div>
+                            <p class="popup__text text-dark" ><strong>Price:</strong> <span id='car_price'>0</span></p>
+                            </div>
+                             
+                          </div>
+                          <!-- pricing text below - Sabur Ahmed-->
+                          <h4 class="text-dark">Total Fee: <span id="pricing">#0.00</span> </h4>
                         </div>
-                        <!-- pop-up Modal codes ends here -->
+
+                        <div class="modal-footer">
+                          <a href="https://paystack.com/pay/flybetabook" type="button" class="btn btn-warning">Proceed to Payment</a>
+                          <button type="button" class="btn btn-light" data-dismiss="modal">Close</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+
+          
+
+          </div>
+          <!-- pop-up Modal codes ends here -->
 
                     </div>
                 </div>
