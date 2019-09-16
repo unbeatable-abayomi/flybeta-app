@@ -44,23 +44,23 @@ const searchAirports = async (airPortText) => {
 
 // show results in html
 
-const outputHtml = (matches) => {
-	if (matches.length > 0) {
-		const html = matches
-			.map(
-				(match) => `
-     <div class="card card-body mb-1">
-     <h6 class="text-primary">${match.name} (${match.city})<span class="text-primary">${match.country}</span></h6>
-     </div>
-    `
-			)
-			.join('');
-		console.log(html);
-		dataLocation.innerHTML = html;
-	}
-};
+// const outputHtml = (matches) => {
+// 	if (matches.length > 0) {
+// 		const html = matches
+// 			.map(
+// 				(match) => `
+//      <div class="card card-body mb-1">
+//      <h6 class="text-primary">${match.name} (${match.city})<span class="text-primary">${match.country}</span></h6>
+//      </div>
+//     `
+// 			)
+// 			.join('');
+// 		console.log(html);
+// 		dataLocation.innerHTML = html;
+// 	}
+// };
 
-origin.addEventListener('input', () => searchAirports(origin.value));
+// origin.addEventListener('input', () => searchAirports(origin.value));
 
 const flightFunction = flightForm.addEventListener('submit', (e) => {
 	e.preventDefault();
