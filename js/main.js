@@ -336,7 +336,7 @@ document.querySelector('#summary').addEventListener('click', (e) => {
 	let total_hotel = sessionStorage.getItem('hotel');
 	let total_car = sessionStorage.getItem('car');
 	const total_all = parseInt(total_flight) + parseInt(total_hotel) + parseInt(total_car);
-	document.querySelector('#pricing').innerHTML = '#' + total_all;
+	document.querySelector('#pricing').innerHTML = '&#8358;' + total_all;
 	console.log(total_flight);
 });
 
