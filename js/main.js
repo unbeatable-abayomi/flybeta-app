@@ -72,7 +72,7 @@ const flightFunction = flightForm.addEventListener('submit', (e) => {
 	// const returningDate1 = returningDate.value;
 	// const adult1 = adult.options[adult.selectedIndex].value;
 	// const children1 = children.options[children.selectedIndex].value;
-	const flight_price = 220473;
+const flight_price =220473;
 
 	// JIDE MODIFICATIONS
 	const adult1 = adult.value;
@@ -173,7 +173,7 @@ const hotelFunction = hotelForm.addEventListener('submit', (e) => {
 	const nationality1 = nationality.options[nationality.selectedIndex].value;
 	//   const room_number1 = checkboxChecked(checkBox);
 	const room_number1 = checkBox.value;
-	const hotel_price = 150999;
+	const hotel_price =150999;
 
 	sessionStorage.setItem('hotel', hotel_price);
 	sessionStorage.setItem('hotel_destination1_input', hotel_destination1);
@@ -268,7 +268,7 @@ const carFunction = carForm.addEventListener('submit', (e) => {
 	const pickup_hours1 = pickup_hours.value;
 	const pickup_minutes1 = pickup_minutes.value;
 	const pickup_meridiem1 = pickup_meridiem.value;
-	const car_price = 30000;
+	const car_price =30000;
 
 	// sessionStorage.setItem('travel_type1_input', travel_type1);
 	sessionStorage.setItem('car', car_price);
