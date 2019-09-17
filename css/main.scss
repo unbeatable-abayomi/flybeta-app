@@ -147,11 +147,10 @@ section.banner1 {
 }
 
 .plus_sign {
-	margin: -2rem !important;
-	text-align: center;
+	// margin: -2rem !important;
+	// text-align: center;
 }
-.plus_of_children {
-}
+
 .children-minus {
 	padding-top: 1rem;
 	padding-bottom: 1.5rem;
@@ -166,6 +165,11 @@ section.banner1 {
 	padding-right: 1rem;
 	font-size: 20px;
 }
+.room-quantity__input {
+	width: 9rem !important;
+}
+.room-minus,
+.room-plus,
 .adult__plus,
 .adult__minus {
 	padding-top: 1rem;
@@ -224,7 +228,6 @@ section.banner1 {
 	width: 13rem;
 	margin-left: 3.5rem;
 	height: 45px;
-	// margin-top: -25rem;
 }
 
 #flight_saveAndBook {
@@ -246,39 +249,38 @@ section.banner1 {
 	margin-left: 3rem;
 }
 
-// @media (max-width: 1024px) {
-// 	#originFrom {
-// 		margin-left: -.8rem;
-// 		// background: red;
-// 	}
-// 	#returning-date-picker {
-// 		width: 13rem;
-// 		margin-left: 13.5rem;
-// 	}
-// 	.returning-text {
-// 		margin-right: -15rem;
-// 	}
-// }
-// @media (max-width: 768px) {
-// 	#originFrom,
-// 	#destinationTo,
-// 	#returning-date-picker {
-// 		width: 9rem;
-// 		margin-right: 1.5rem;
-// 	}
-
-// 	#departing-date-picker {
-// 		width: 9rem;
-// 		margin-left: 4.5rem;
-// 	}
-
-// 	#adultNumber,
-// 	#childrenNumber,
-// 	#classType {
-// 		width: 9rem;
-// 	}
-
 @media (max-width: 425px) {
+	.children-minus,
+	.children-plus {
+		margin-bottom: .5rem !important;
+	}
+	.adult__plus {
+	}
+	// .adult__minus {
+	// 	margin-left: -9rem !important;
+	// }
+	.adult__minus {
+		position: absolute;
+		top: 2rem;
+		left: -1.5rem;
+	}
+	.adult__plus {
+		position: absolute;
+		top: 2rem;
+		left: 9rem;
+	}
+	.quantity_children-quantity__input {
+		margin-left: -6rem !important;
+	}
+	.adult-text {
+		margin-left: 3rem;
+	}
+	.children-text {
+		margin-left: 7rem;
+	}
+	.room-quantity__input_div {
+		margin-right: 3.4rem;
+	}
 	.panel1011_firstDiv {
 		margin-bottom: 10rem;
 	}
@@ -324,6 +326,22 @@ section.banner1 {
 }
 
 @media (max-width: 375px) {
+	.adult-text {
+		margin-right: 4rem;
+	}
+	.adult__minus {
+		position: absolute;
+		top: 2rem;
+		left: -3rem;
+	}
+	.adult__plus {
+		position: absolute;
+		top: 2rem;
+		left: 7.5rem;
+	}
+	.children-text {
+		margin-right: -5rem;
+	}
 	#originFrom,
 	#destinationTo,
 	#returning-date-picker,
