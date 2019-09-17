@@ -25,42 +25,44 @@ const ticket_classType = selector('#ticket_classType');
 
 // Search State.json filter
 
-const searchAirports = async (airPortText) => {
-	const res = await fetch('../data/airports.json');
-	const flights = await res.json();
-	console.log(flights);
-	// get matches to current text input
-	let matches = flights.filter((flight) => {
-		const regex = new RegExp(`^${airPortText}`, 'gi');
-		return flight.name.match(regex) || flight.city.match(regex);
-	});
+// const searchAirports = async (airPortText) => {
+// 	const res = await fetch('../data/airports.json');
+// 	const flights = await res.json();
+// 	console.log(flights);
+// 	// get matches to current text input
+// 	let matches = flights.filter((flight) => {
+// 		const regex = new RegExp(`^${airPortText}`, 'gi');
+// 		return flight.name.match(regex) || flight.city.match(regex);
+// 	});
 
-	if (airPortText === 0) {
-		matches = [];
-	}
-	console.log(matches);
-	outputHtml(matches);
-};
+// 	if (airPortText === 0) {
+// 		matches = [];
+// 	}
+// 	console.log(matches);
+// 	outputHtml(matches);
+// };
 
 // show results in html
 
-// const outputHtml = (matches) => {
-// 	if (matches.length > 0) {
-// 		const html = matches
-// 			.map(
-// 				(match) => `
-//      <div class="card card-body mb-1">
-//      <h6 class="text-primary">${match.name} (${match.city})<span class="text-primary">${match.country}</span></h6>
-//      </div>
-//     `
-// 			)
-// 			.join('');
-// 		console.log(html);
-// 		dataLocation.innerHTML = html;
-// 	}
-// };
+const outputHtml = (matches) => {
+	if (matches.length > 0) {
+		const html = matches
+			.map(
+				(match) => `
+	 
+	 <datalist id='datalist10'>
+	 <option class="text-primary" value=${match.name}>
+	 </datalist>
+     
+    `
+			)
+			.join('');
+		console.log(html);
+		dataLocation.innerHTML = html;
+	}
+};
 
-// origin.addEventListener('input', () => searchAirports(origin.value));
+origin.addEventListener('input', () => searchAirports(origin.value));
 
 const flightFunction = flightForm.addEventListener('submit', (e) => {
 	e.preventDefault();
@@ -69,33 +71,33 @@ const flightFunction = flightForm.addEventListener('submit', (e) => {
 	const departingDate1 = departingDate.value;
 	// const returningDate1 = returningDate.value;
 	// const adult1 = adult.options[adult.selectedIndex].value;
-  // const children1 = children.options[children.selectedIndex].value;
-  const flight_price = 220473;
+	// const children1 = children.options[children.selectedIndex].value;
+	const flight_price = 220473;
 
 	// JIDE MODIFICATIONS
 	const adult1 = adult.value;
 	const children1 = children.value;
 
-  const classType1 = classType.options[classType.selectedIndex].value;
-  sessionStorage.setItem("flight", flight_price);
+	const classType1 = classType.options[classType.selectedIndex].value;
+	sessionStorage.setItem('flight', flight_price);
 	sessionStorage.setItem('origin_input', origin1);
 	sessionStorage.setItem('destination1_input', destination1);
 	sessionStorage.setItem('departingDate1_input', departingDate1);
 	// sessionStorage.setItem('returningDate1_input', returningDate1);
 	sessionStorage.setItem('adult1_input', adult1);
 	sessionStorage.setItem('children1_input', children1);
-  sessionStorage.setItem('classType1_input', classType1);
-  
-  const flight_price_value = sessionStorage.getItem("flight");
+	sessionStorage.setItem('classType1_input', classType1);
+
+	const flight_price_value = sessionStorage.getItem('flight');
 	const origin_input = sessionStorage.getItem('origin_input');
 	const destination1_input = sessionStorage.getItem('destination1_input');
 	const departingDate1_input = sessionStorage.getItem('departingDate1_input');
 	const returningDate1_input = sessionStorage.getItem('returningDate1_input');
 	const adult1_input = sessionStorage.getItem('adult1_input');
 	const children1_input = sessionStorage.getItem('children1_input');
-  const classType1_input = sessionStorage.getItem('classType1_input');
-  
-  document.querySelector("#flight_price").innerHTML = flight_price_value;
+	const classType1_input = sessionStorage.getItem('classType1_input');
+
+	document.querySelector('#flight_price').innerHTML = flight_price_value;
 	ticket_origin.innerHTML = origin_input;
 	ticket_destination.innerHTML = destination1_input;
 	ticket_departing.innerHTML = departingDate1_input;
@@ -170,29 +172,27 @@ const hotelFunction = hotelForm.addEventListener('submit', (e) => {
 	const check_out_date1 = check_out_date.value;
 	const nationality1 = nationality.options[nationality.selectedIndex].value;
 	//   const room_number1 = checkboxChecked(checkBox);
-  const room_number1 = checkBox.value;
-  const hotel_price = 150999;
+	const room_number1 = checkBox.value;
+	const hotel_price = 150999;
 
-  sessionStorage.setItem("hotel", hotel_price);
+	sessionStorage.setItem('hotel', hotel_price);
 	sessionStorage.setItem('hotel_destination1_input', hotel_destination1);
 	sessionStorage.setItem('hotel_preference1_input', hotel_preference1);
 	sessionStorage.setItem('check_in_date1_input', check_in_date1);
 	sessionStorage.setItem('check_out_date1_input', check_out_date1);
 	sessionStorage.setItem('room_number1_input', room_number1);
-  sessionStorage.setItem('nationality1_input', nationality1);
-  
-  const hotel_price_value = sessionStorage.getItem("hotel");
-  console.log(parseInt(hotel_price_value));
+	sessionStorage.setItem('nationality1_input', nationality1);
+
+	const hotel_price_value = sessionStorage.getItem('hotel');
+	console.log(parseInt(hotel_price_value));
 	const hotel_destination1_input = sessionStorage.getItem('hotel_destination1_input');
 	const hotel_preference1_input = sessionStorage.getItem('hotel_preference1_input');
 	const check_in_date1_input = sessionStorage.getItem('check_in_date1_input');
 	const check_out_date1_input = sessionStorage.getItem('check_out_date1_input');
 	const room_number1_input = sessionStorage.getItem('room_number1_input');
-  const nationality1_input = sessionStorage.getItem('nationality1_input');
-  
-  const price_hotel = (document.querySelector(
-    "#hotel_price"
-  ).innerHTML = hotel_price_value);
+	const nationality1_input = sessionStorage.getItem('nationality1_input');
+
+	const price_hotel = (document.querySelector('#hotel_price').innerHTML = hotel_price_value);
 	ticket_city.innerHTML = hotel_destination1_input;
 	ticket_hotelPreference.innerHTML = hotel_preference1_input;
 	ticket_checkIn.innerHTML = check_in_date1_input;
@@ -267,11 +267,11 @@ const carFunction = carForm.addEventListener('submit', (e) => {
 	const returnTrip_date1 = returnTrip_date.value;
 	const pickup_hours1 = pickup_hours.value;
 	const pickup_minutes1 = pickup_minutes.value;
-  const pickup_meridiem1 = pickup_meridiem.value;
-  const car_price = 30000;
+	const pickup_meridiem1 = pickup_meridiem.value;
+	const car_price = 30000;
 
-  // sessionStorage.setItem('travel_type1_input', travel_type1);
-  sessionStorage.setItem("car", car_price);
+	// sessionStorage.setItem('travel_type1_input', travel_type1);
+	sessionStorage.setItem('car', car_price);
 	sessionStorage.setItem('source_city1_input', source_city1);
 	sessionStorage.setItem('destination_city1_input', destination_city1);
 	sessionStorage.setItem('multiCity_trip_date_one_input', multiCity_trip_date_one);
@@ -281,9 +281,9 @@ const carFunction = carForm.addEventListener('submit', (e) => {
 	sessionStorage.setItem('returnTrip_date1_input', returnTrip_date1);
 	sessionStorage.setItem('pickup_hours1_input', pickup_hours1);
 	sessionStorage.setItem('pickup_minutes1_input', pickup_minutes1);
-  sessionStorage.setItem('pickup_meridiem1_input', pickup_meridiem1);
-  
-  const car_price_value = sessionStorage.getItem("car");
+	sessionStorage.setItem('pickup_meridiem1_input', pickup_meridiem1);
+
+	const car_price_value = sessionStorage.getItem('car');
 	const travel_type1_input = sessionStorage.getItem('travel_type1_input');
 	const source_city1_input = sessionStorage.getItem('source_city1_input');
 	const destination_city1_input = sessionStorage.getItem('destination_city1_input');
@@ -296,8 +296,8 @@ const carFunction = carForm.addEventListener('submit', (e) => {
 	const pickup_minutes1_input = sessionStorage.getItem('pickup_minutes1_input');
 	const pickup_meridiem1_input = sessionStorage.getItem('pickup_meridiem1_input');
 
-  // ticket_travelType.innerHTML = travel_type1_input;
-  price_car = document.querySelector("#car_price").innerHTML = car_price_value;
+	// ticket_travelType.innerHTML = travel_type1_input;
+	price_car = document.querySelector('#car_price').innerHTML = car_price_value;
 	ticket_sourceCity.innerHTML = source_city1_input;
 	ticket_destinationCity.innerHTML = destination_city1_input;
 	// ticket_multiCity_trip_date_1.innerHTML = multiCity_trip_date_one_input;
@@ -330,15 +330,14 @@ const carFunction = carForm.addEventListener('submit', (e) => {
 });
 
 // Total price codes - Sabur Ahmed
-document.querySelector("#summary").addEventListener("click", e => {
-  e.preventDefault();
-  let total_flight = sessionStorage.getItem("flight");
-  let total_hotel = sessionStorage.getItem("hotel");
-  let total_car = sessionStorage.getItem("car");
-  const total_all =
-    parseInt(total_flight) + parseInt(total_hotel) + parseInt(total_car);
-  document.querySelector("#pricing").innerHTML = "#" + total_all;
-  console.log(total_flight);
+document.querySelector('#summary').addEventListener('click', (e) => {
+	e.preventDefault();
+	let total_flight = sessionStorage.getItem('flight');
+	let total_hotel = sessionStorage.getItem('hotel');
+	let total_car = sessionStorage.getItem('car');
+	const total_all = parseInt(total_flight) + parseInt(total_hotel) + parseInt(total_car);
+	document.querySelector('#pricing').innerHTML = '#' + total_all;
+	console.log(total_flight);
 });
 
 // Pricing Logic - Sabur Ahmed (not getting the desired result as at 7:53AM, 18th August, still on it.)
@@ -401,7 +400,7 @@ $(document).ready(function() {
 	adult_minus.click(function(e) {
 		e.preventDefault();
 		var adultValue = adult_input.val();
-		if (adultValue > 1) {
+		if (adultValue > 0) {
 			adultValue--;
 		}
 		adult_input.val(adultValue);

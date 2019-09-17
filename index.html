@@ -143,7 +143,8 @@
                                     type="text" 
                                     id="originFrom" 
                                     class="form-control" 
-                                  
+                    list="datalist1"
+                                    
                                     placeholder="City, Airport"
                                     required
                                     />
@@ -301,33 +302,41 @@
                                 
                                 <div class="row belowDiv">
 
-                                  <div class="col-md-3" style="padding-left: 3px; padding-right: 5px;">
-                                    <label class="black-text active adult-text">Adults</label>
-
-                                    <!-- QUANTITY OF ADULTS -->
-                                    <div class="quantity">
-                                      <a href="#" class="quantity__minus adult__minus"><span>-</span></a>
-                                      <input name="quantity" type="text" class="quantity__input adult-quantity__input"
-                                        value="1"
-                                        id="adultNumber"
-                                        >
-                                      <a href="#" class="quantity__plus adult__plus"><span>+</span></a>
-                                    </div>
-                                  </div>
-                                  <div class="col-md-2" style="padding-left: 5px; padding-right: 5px;">
+                                  <div class="col-md-2 quantity_children-quantity__input" style="padding-left: 5px; padding-right: 5px;">
                                     <label class="black-text children-text">Children</label>
 
                                     <!-- QUANTITY OF CHILDREN -->
                                       <div class="quantity">
-                                        <a href="#" class="quantity__minus children-minus"><span>-</span></a>
-                                        <input name="quantity" type="text" class="quantity__input children-quantity__input" 
+         <a href="#" class="quantity__minus children-minus"><span>-</span></a>
+         <input name="quantity" type="text" class="quantity__input children-quantity__input" 
                                         value="0"
                                         id="childrenNumber"
                                         >
-                                        <a href="#" class="quantity__plus children-plus"><span>+</span></a>
+           <a href="#" class="quantity__plus children-plus"><span class="plus_of_children">+</span></a>
+        
                                       </div>
                                   </div>
-                                  <div class="col-md-2" style="padding-left: 5px; padding-right: 0px;">
+
+
+
+
+
+
+                                  <div class="col-md-3 quantity_adult-quantity__input" style="padding-left: 3px; padding-right: 5px;">
+                                    <label class="black-text active adult-text">Adults</label>
+
+                                    <!-- QUANTITY OF ADULTS -->
+                                    <div class="quantity">
+                  <a href="#" class="quantity__minus adult__minus"><span>-</span></a>
+                                      <input name="quantity" type="text" class="quantity__input adult-quantity__input"
+                                        value="0"
+                                        id="adultNumber"
+                                        >
+                                      <a href="#" class="quantity__plus adult__plus"><span class="plus_sign">+</span></a>
+                                    </div>
+                                  </div>
+                                 
+                                  <div class="col-md-2 classType_div" style="padding-left: 5px; padding-right: 0px;">
                                     <label class="black-text active classtype_text">Class Type</label>
                                     <select class="mdb-select ng-pristine ng-untouched ng-valid ng-empty"
                                       autocomplete="on" style=" border: 1px solid #ced4da;
