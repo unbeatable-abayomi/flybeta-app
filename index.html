@@ -307,12 +307,12 @@
 
                                     <!-- QUANTITY OF CHILDREN -->
                                       <div class="quantity">
-         <a href="#" class="quantity__minus children-minus"><span>-</span></a>
+         <a href="#" class="quantity__minus children-minus"><span id="minus_symbol_children">-</span></a>
          <input name="quantity" type="text" class="quantity__input children-quantity__input" 
                                         value="0"
                                         id="childrenNumber"
                                         >
-           <a href="#" class="quantity__plus children-plus"><span class="plus_of_children">+</span></a>
+           <a href="#" class="quantity__plus children-plus"><span class="plus_of_children" id="plus_symbol_children">+</span></a>
         
                                       </div>
                                   </div>
@@ -327,12 +327,12 @@
 
                                     <!-- QUANTITY OF ADULTS -->
                                     <div class="quantity">
-                  <a href="#" class="quantity__minus adult__minus"><span>-</span></a>
+                  <a href="#" class="quantity__minus adult__minus"><span id="minus_symbol_adult">-</span></a>
                                       <input name="quantity" type="text" class="quantity__input adult-quantity__input"
                                         value="0"
                                         id="adultNumber"
                                         >
-    <a href="#" class="quantity__plus adult__plus"><span class="plus_sign">+</span></a>
+    <a href="#" class="quantity__plus adult__plus"><span class="plus_sign" id="plus_symbol_adult">+</span></a>
                                     </div>
                                   </div>
                                  
@@ -501,18 +501,7 @@
 
                                </div>
                                <div class="row">
-                                 <div class="col-md-3 room-quantity__input_div" style="padding-left: 5px;    padding-right: 5px;">
-                                   <label class="black-text">Room</label><br>
-
-                                  <!-- QUANTITY OF ROOMS -->
-                                  <div class="quantity">
-                                    <a href="#" class="quantity__minus room-minus"><span>-</span></a>
-                            <input name="quantity" type="text" class="quantity__input room-quantity__input" 
-                                    value="1"
-                                    id="roomNumber"
-                                    >
-                                    <a href="#" class="quantity__plus room-plus"><span>+</span></a>
-                                  </div>
+                                
 
                                    <!-- Default inline 1
                                    <div class="custom-control custom-radio custom-control-inline">
@@ -534,7 +523,7 @@
                                      <label class="custom-control-label orange-text" for="defaultInline3">3</label>
                                    </div> --> 
 
-                                 </div>
+                                 <!-- </div> -->
                                  <div class="col-md-3" style="padding-left: 3px;    padding-right: 5px;">
 
                                    <label class="black-text active">Nationality</label>
@@ -736,6 +725,19 @@
                                      <option value="UZ">Uzbek</option>
                                      <option value="VU">Vanuatuan</option>
                                    </select>
+                                 </div>
+                                 <div class="col-md-3 room-quantity__input_div" style="padding-left: 5px;    padding-right: 5px;">
+                                  <label class="black-text room_text">Room</label><br>
+
+                                 <!-- QUANTITY OF ROOMS -->
+                                 <div class="quantity">
+                                   <a href="#" class="quantity__minus room-minus"><span id="minus_symbol_room">-</span></a>
+                           <input name="quantity" type="text" class="quantity__input room-quantity__input" 
+                                   value="1"
+                                   id="roomNumber"
+                                   >
+                                   <a href="#" class="quantity__plus room-plus"><span id="plus_symbol_room">+</span></a>
+                                 </div>
                                  </div>
 
                                  <div class="col-md-2" style="padding-left: 5px;    padding-right: 0px;">

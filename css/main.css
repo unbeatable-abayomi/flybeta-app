@@ -138,6 +138,39 @@ section.banner1 {
   margin-left: -.1rem !important;
 }
 
+#minus_symbol_children {
+  position: absolute !important;
+  bottom: 10px !important;
+}
+
+#plus_symbol_children {
+  position: absolute !important;
+  bottom: 10px !important;
+  margin-left: -.4rem;
+}
+
+#minus_symbol_adult {
+  position: absolute !important;
+  bottom: 9px !important;
+}
+
+#plus_symbol_adult {
+  position: absolute !important;
+  bottom: 10px !important;
+  right: 5.4px !important;
+}
+
+#plus_symbol_room {
+  position: absolute !important;
+  bottom: 12.5px !important;
+  right: 19px !important;
+}
+
+#minus_symbol_room {
+  position: absolute !important;
+  bottom: 13.4px !important;
+}
+
 .children-minus {
   padding-top: 1rem;
   padding-bottom: 1.5rem;
@@ -244,6 +277,18 @@ section.banner1 {
   .children-minus,
   .children-plus {
     margin-bottom: .5rem !important;
+  }
+  #minus_symbol_children {
+    position: absolute !important;
+    bottom: 17px !important;
+  }
+  #plus_symbol_children {
+    position: absolute !important;
+    bottom: 17px !important;
+    right: 4px !important;
+  }
+  .room_text {
+    margin-left: 2.5rem;
   }
   .adult__minus {
     position: absolute;
